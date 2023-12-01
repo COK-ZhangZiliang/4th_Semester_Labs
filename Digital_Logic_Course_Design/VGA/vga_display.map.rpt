@@ -1,0 +1,513 @@
+Analysis & Synthesis report for vga_display
+Thu May 25 19:06:34 2023
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Source assignments for lpm_counter:h_count_rtl_0
+ 10. Source assignments for lpm_add_sub:Add0|addcore:adder[1]
+ 11. Source assignments for lpm_add_sub:Add0|addcore:adder[0]
+ 12. Parameter Settings for Inferred Entity Instance: lpm_counter:h_count_rtl_0
+ 13. Parameter Settings for Inferred Entity Instance: lpm_add_sub:Add0
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                           ;
++-----------------------------+------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu May 25 19:06:34 2023    ;
+; Quartus II Version          ; 9.1 Build 222 10/21/2009 SJ Full Version ;
+; Revision Name               ; vga_display                              ;
+; Top-level Entity Name       ; vga_display                              ;
+; Family                      ; MAX7000S                                 ;
+; Total macrocells            ; 65                                       ;
+; Total pins                  ; 8                                        ;
++-----------------------------+------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                     ; Setting         ; Default Value ;
++----------------------------------------------------------------------------+-----------------+---------------+
+; Device                                                                     ; EPM7128SLC84-15 ;               ;
+; Top-level entity name                                                      ; vga_display     ; vga_display   ;
+; Family name                                                                ; MAX7000S        ; Stratix II    ;
+; Type of Retiming Performed During Resynthesis                              ; Full            ;               ;
+; Resynthesis Optimization Effort                                            ; Normal          ;               ;
+; Physical Synthesis Level for Resynthesis                                   ; Normal          ;               ;
+; Use Generated Physical Constraints File                                    ; On              ;               ;
+; Use smart compilation                                                      ; Off             ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On              ; On            ;
+; Enable compact report table                                                ; Off             ; Off           ;
+; Create Debugging Nodes for IP Cores                                        ; Off             ; Off           ;
+; Preserve fewer node names                                                  ; On              ; On            ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off             ; Off           ;
+; Verilog Version                                                            ; Verilog_2001    ; Verilog_2001  ;
+; VHDL Version                                                               ; VHDL_1993       ; VHDL_1993     ;
+; State Machine Processing                                                   ; Auto            ; Auto          ;
+; Safe State Machine                                                         ; Off             ; Off           ;
+; Extract Verilog State Machines                                             ; On              ; On            ;
+; Extract VHDL State Machines                                                ; On              ; On            ;
+; Ignore Verilog initial constructs                                          ; Off             ; Off           ;
+; Iteration limit for constant Verilog loops                                 ; 5000            ; 5000          ;
+; Iteration limit for non-constant Verilog loops                             ; 250             ; 250           ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On              ; On            ;
+; Parallel Synthesis                                                         ; On              ; On            ;
+; NOT Gate Push-Back                                                         ; On              ; On            ;
+; Power-Up Don't Care                                                        ; On              ; On            ;
+; Remove Duplicate Registers                                                 ; On              ; On            ;
+; Ignore CARRY Buffers                                                       ; Off             ; Off           ;
+; Ignore CASCADE Buffers                                                     ; Off             ; Off           ;
+; Ignore GLOBAL Buffers                                                      ; Off             ; Off           ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off             ; Off           ;
+; Ignore LCELL Buffers                                                       ; Auto            ; Auto          ;
+; Ignore SOFT Buffers                                                        ; Off             ; Off           ;
+; Limit AHDL Integers to 32 Bits                                             ; Off             ; Off           ;
+; Optimization Technique                                                     ; Speed           ; Speed         ;
+; Allow XOR Gate Usage                                                       ; On              ; On            ;
+; Auto Logic Cell Insertion                                                  ; On              ; On            ;
+; Parallel Expander Chain Length                                             ; 4               ; 4             ;
+; Auto Parallel Expanders                                                    ; On              ; On            ;
+; Auto Open-Drain Pins                                                       ; On              ; On            ;
+; Auto Resource Sharing                                                      ; Off             ; Off           ;
+; Maximum Fan-in Per Macrocell                                               ; 100             ; 100           ;
+; Use LogicLock Constraints during Resource Balancing                        ; On              ; On            ;
+; Ignore translate_off and synthesis_off directives                          ; Off             ; Off           ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On              ; On            ;
+; HDL message level                                                          ; Level2          ; Level2        ;
+; Suppress Register Optimization Related Messages                            ; Off             ; Off           ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 100             ; 100           ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100             ; 100           ;
+; Block Design Naming                                                        ; Auto            ; Auto          ;
+; Synthesis Effort                                                           ; Auto            ; Auto          ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On              ; On            ;
+; Analysis & Synthesis Message Level                                         ; Medium          ; Medium        ;
+; Disable Register Merging Across Hierarchies                                ; Auto            ; Auto          ;
++----------------------------------------------------------------------------+-----------------+---------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                              ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                 ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------+
+; vga_display.vhd                  ; yes             ; User VHDL File  ; C:/Users/Administrator/Desktop/VGA´¿·Û/vga_display.vhd       ;
+; lpm_counter.tdf                  ; yes             ; Megafunction    ; c:/altera/91/quartus/libraries/megafunctions/lpm_counter.tdf ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction    ; c:/altera/91/quartus/libraries/megafunctions/lpm_add_sub.tdf ;
+; addcore.tdf                      ; yes             ; Megafunction    ; c:/altera/91/quartus/libraries/megafunctions/addcore.tdf     ;
+; a_csnbuffer.tdf                  ; yes             ; Megafunction    ; c:/altera/91/quartus/libraries/megafunctions/a_csnbuffer.tdf ;
+; look_add.tdf                     ; yes             ; Megafunction    ; c:/altera/91/quartus/libraries/megafunctions/look_add.tdf    ;
+; altshift.tdf                     ; yes             ; Megafunction    ; c:/altera/91/quartus/libraries/megafunctions/altshift.tdf    ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++----------------------+-----------------------------------+
+; Resource             ; Usage                             ;
++----------------------+-----------------------------------+
+; Logic cells          ; 65                                ;
+; Total registers      ; 17                                ;
+; I/O pins             ; 8                                 ;
+; Shareable expanders  ; 32                                ;
+; Parallel expanders   ; 15                                ;
+; Maximum fan-out node ; lpm_counter:h_count_rtl_0|dffs[1] ;
+; Maximum fan-out      ; 36                                ;
+; Total fan-out        ; 681                               ;
+; Average fan-out      ; 6.49                              ;
++----------------------+-----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                        ;
++--------------------------------+------------+------+----------------------------------------+--------------+
+; Compilation Hierarchy Node     ; Macrocells ; Pins ; Full Hierarchy Name                    ; Library Name ;
++--------------------------------+------------+------+----------------------------------------+--------------+
+; |vga_display                   ; 65         ; 8    ; |vga_display                           ; work         ;
+;    |lpm_counter:h_count_rtl_0| ; 5          ; 0    ; |vga_display|lpm_counter:h_count_rtl_0 ; work         ;
++--------------------------------+------------+------+----------------------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; temp_color[0]                                       ; Mux1                ; yes                    ;
+; temp_color[1]                                       ; Mux1                ; yes                    ;
+; temp_color[2]                                       ; Mux1                ; yes                    ;
+; h_part[3]                                           ; GND                 ; yes                    ;
+; h_part[2]                                           ; GND                 ; yes                    ;
+; h_part[0]                                           ; GND                 ; yes                    ;
+; h_part[1]                                           ; GND                 ; yes                    ;
+; v_part[0]                                           ; GND                 ; yes                    ;
+; v_part[1]                                           ; GND                 ; yes                    ;
+; v_part[2]                                           ; GND                 ; yes                    ;
+; v_part[3]                                           ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 11  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------+
+; Source assignments for lpm_counter:h_count_rtl_0 ;
++---------------------------+-------+------+-------+
+; Assignment                ; Value ; From ; To    ;
++---------------------------+-------+------+-------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -     ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -     ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -     ;
++---------------------------+-------+------+-------+
+
+
++----------------------------------------------------------+
+; Source assignments for lpm_add_sub:Add0|addcore:adder[1] ;
++---------------------------+-------+------+---------------+
+; Assignment                ; Value ; From ; To            ;
++---------------------------+-------+------+---------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -             ;
++---------------------------+-------+------+---------------+
+
+
++----------------------------------------------------------+
+; Source assignments for lpm_add_sub:Add0|addcore:adder[0] ;
++---------------------------+-------+------+---------------+
+; Assignment                ; Value ; From ; To            ;
++---------------------------+-------+------+---------------+
+; SUPPRESS_DA_RULE_INTERNAL ; A103  ; -    ; -             ;
++---------------------------+-------+------+---------------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_counter:h_count_rtl_0 ;
++------------------------+-------------------+-------------------------------+
+; Parameter Name         ; Value             ; Type                          ;
++------------------------+-------------------+-------------------------------+
+; AUTO_CARRY_CHAINS      ; ON                ; AUTO_CARRY                    ;
+; IGNORE_CARRY_BUFFERS   ; OFF               ; IGNORE_CARRY                  ;
+; AUTO_CASCADE_CHAINS    ; ON                ; AUTO_CASCADE                  ;
+; IGNORE_CASCADE_BUFFERS ; OFF               ; IGNORE_CASCADE                ;
+; LPM_WIDTH              ; 5                 ; Untyped                       ;
+; LPM_DIRECTION          ; UP                ; Untyped                       ;
+; LPM_MODULUS            ; 0                 ; Untyped                       ;
+; LPM_AVALUE             ; UNUSED            ; Untyped                       ;
+; LPM_SVALUE             ; UNUSED            ; Untyped                       ;
+; LPM_PORT_UPDOWN        ; PORT_CONNECTIVITY ; Untyped                       ;
+; DEVICE_FAMILY          ; MAX7000S          ; Untyped                       ;
+; CARRY_CHAIN            ; MANUAL            ; Untyped                       ;
+; CARRY_CHAIN_LENGTH     ; 48                ; CARRY_CHAIN_LENGTH            ;
+; NOT_GATE_PUSH_BACK     ; ON                ; NOT_GATE_PUSH_BACK            ;
+; CARRY_CNT_EN           ; SMART             ; Untyped                       ;
+; LABWIDE_SCLR           ; ON                ; Untyped                       ;
+; USE_NEW_VERSION        ; TRUE              ; Untyped                       ;
+; CBXI_PARAMETER         ; NOTHING           ; Untyped                       ;
++------------------------+-------------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_add_sub:Add0 ;
++------------------------+-------------+----------------------------+
+; Parameter Name         ; Value       ; Type                       ;
++------------------------+-------------+----------------------------+
+; LPM_WIDTH              ; 10          ; Untyped                    ;
+; LPM_REPRESENTATION     ; UNSIGNED    ; Untyped                    ;
+; LPM_DIRECTION          ; ADD         ; Untyped                    ;
+; ONE_INPUT_IS_CONSTANT  ; YES         ; Untyped                    ;
+; LPM_PIPELINE           ; 0           ; Untyped                    ;
+; MAXIMIZE_SPEED         ; 5           ; Untyped                    ;
+; REGISTERED_AT_END      ; 0           ; Untyped                    ;
+; OPTIMIZE_FOR_SPEED     ; 9           ; Untyped                    ;
+; USE_CS_BUFFERS         ; 1           ; Untyped                    ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                    ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH         ;
+; DEVICE_FAMILY          ; MAX7000S    ; Untyped                    ;
+; USE_WYS                ; OFF         ; Untyped                    ;
+; STYLE                  ; FAST        ; Untyped                    ;
+; CBXI_PARAMETER         ; add_sub_4ph ; Untyped                    ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY               ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE               ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE             ;
++------------------------+-------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Thu May 25 19:06:32 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vga_display -c vga_display
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Found 2 design units, including 1 entities, in source file vga_display.vhd
+    Info: Found design unit 1: vga_display-rt1
+    Info: Found entity 1: vga_display
+Info: Elaborating entity "vga_display" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(93): signal "h_part" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(118): signal "v_part" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at vga_display.vhd(64): inferring latch(es) for signal or variable "h_part", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at vga_display.vhd(64): inferring latch(es) for signal or variable "v_part", which holds its previous value in one or more paths through the process
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(140): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(141): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(143): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(145): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(147): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(149): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(151): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(153): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(155): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(160): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(161): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(163): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(165): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(167): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(169): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(171): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(173): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(175): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(180): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(181): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(183): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(185): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(187): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(189): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(191): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(193): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(195): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(200): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(201): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(203): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(205): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(207): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(209): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(211): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(213): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(215): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(220): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(221): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(223): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(225): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(227): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(229): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(231): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(233): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(235): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(240): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(241): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(243): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(245): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(247): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(249): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(251): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(253): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(255): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(260): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(261): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(263): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(265): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(267): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(269): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(271): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(273): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(275): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(280): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(281): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(283): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(285): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(287): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(289): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(291): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(293): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(295): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(305): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(307): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(309): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(311): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(313): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(315): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(317): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(319): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(321): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(326): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(327): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(329): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(331): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(333): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(335): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(337): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(339): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(341): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(343): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(346): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(347): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(349): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(351): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(353): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(355): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(357): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(359): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(361): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(363): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(366): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(367): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(369): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(371): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(373): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(375): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(377): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(379): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(381): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(383): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(386): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(387): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(389): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(391): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(393): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(395): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(397): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(399): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(401): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(403): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(406): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(407): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(409): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(411): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(413): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(415): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(417): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(419): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(421): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(423): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(426): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(427): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(429): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(431): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(433): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(435): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(437): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(439): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(441): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(443): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(446): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(447): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(449): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(451): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(453): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(455): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(457): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(459): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(461): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(463): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(466): signal "RowPart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(467): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(469): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(471): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(473): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(475): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(477): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(479): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(481): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(483): signal "LinePart" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(491): signal "finish" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at vga_display.vhd(491): signal "h_end" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at vga_display.vhd(136): inferring latch(es) for signal or variable "temp_color", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "temp_color[0]" at vga_display.vhd(136)
+Info (10041): Inferred latch for "temp_color[1]" at vga_display.vhd(136)
+Info (10041): Inferred latch for "temp_color[2]" at vga_display.vhd(136)
+Info (10041): Inferred latch for "v_part[0]" at vga_display.vhd(64)
+Info (10041): Inferred latch for "v_part[1]" at vga_display.vhd(64)
+Info (10041): Inferred latch for "v_part[2]" at vga_display.vhd(64)
+Info (10041): Inferred latch for "v_part[3]" at vga_display.vhd(64)
+Info (10041): Inferred latch for "h_part[0]" at vga_display.vhd(64)
+Info (10041): Inferred latch for "h_part[1]" at vga_display.vhd(64)
+Info (10041): Inferred latch for "h_part[2]" at vga_display.vhd(64)
+Info (10041): Inferred latch for "h_part[3]" at vga_display.vhd(64)
+Info: Inferred 1 megafunctions from design logic
+    Info: Inferred lpm_counter megafunction (LPM_WIDTH=5) from the following logic: "h_count[0]~0"
+Info: Inferred 1 megafunctions from design logic
+    Info: Inferred adder/subtractor megafunction ("lpm_add_sub") from the following logic: "Add0"
+Info: Elaborated megafunction instantiation "lpm_counter:h_count_rtl_0"
+Info: Instantiated megafunction "lpm_counter:h_count_rtl_0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "5"
+    Info: Parameter "LPM_DIRECTION" = "UP"
+    Info: Parameter "LPM_TYPE" = "LPM_COUNTER"
+Info: Elaborated megafunction instantiation "lpm_add_sub:Add0"
+Info: Instantiated megafunction "lpm_add_sub:Add0" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "10"
+    Info: Parameter "LPM_DIRECTION" = "ADD"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "ONE_INPUT_IS_CONSTANT" = "YES"
+Info: Elaborated megafunction instantiation "lpm_add_sub:Add0|addcore:adder[1]", which is child of megafunction instantiation "lpm_add_sub:Add0"
+Info: Elaborated megafunction instantiation "lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:oflow_node", which is child of megafunction instantiation "lpm_add_sub:Add0"
+Info: Elaborated megafunction instantiation "lpm_add_sub:Add0|addcore:adder[1]|a_csnbuffer:result_node", which is child of megafunction instantiation "lpm_add_sub:Add0"
+Info: Elaborated megafunction instantiation "lpm_add_sub:Add0|addcore:adder[0]", which is child of megafunction instantiation "lpm_add_sub:Add0"
+Info: Elaborated megafunction instantiation "lpm_add_sub:Add0|look_add:look_ahead_unit", which is child of megafunction instantiation "lpm_add_sub:Add0"
+Info: Elaborated megafunction instantiation "lpm_add_sub:Add0|altshift:result_ext_latency_ffs", which is child of megafunction instantiation "lpm_add_sub:Add0"
+Info: Elaborated megafunction instantiation "lpm_add_sub:Add0|altshift:carry_ext_latency_ffs", which is child of megafunction instantiation "lpm_add_sub:Add0"
+Info: Ignored 10 buffer(s)
+    Info: Ignored 10 SOFT buffer(s)
+Info: Promoted pin-driven signal(s) to global signal
+    Info: Promoted clear signal driven by pin "clr" to global clear signal
+Info: Implemented 105 device resources after synthesis - the final resource count might be different
+    Info: Implemented 3 input pins
+    Info: Implemented 5 output pins
+    Info: Implemented 65 macrocells
+    Info: Implemented 32 shareable expanders
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 168 warnings
+    Info: Peak virtual memory: 232 megabytes
+    Info: Processing ended: Thu May 25 19:06:34 2023
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

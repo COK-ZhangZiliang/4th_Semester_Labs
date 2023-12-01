@@ -1,0 +1,96 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+# Date created = 19:43:11  March 29, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		pill_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY MAX7000S
+set_global_assignment -name DEVICE "EPM7128SLC84-15"
+set_global_assignment -name TOP_LEVEL_ENTITY pill
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:43:11  MARCH 29, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VHDL_FILE total_pills.vhd
+set_global_assignment -name VHDL_FILE display.vhd
+set_global_assignment -name VHDL_FILE per_bottle.vhd
+set_global_assignment -name VHDL_FILE control.vhd
+set_global_assignment -name MAX7000_DEVICE_IO_STANDARD TTL
+set_location_assignment PIN_58 -to clk
+set_location_assignment PIN_54 -to clr
+set_location_assignment PIN_51 -to green
+set_location_assignment PIN_24 -to led[19]
+set_location_assignment PIN_22 -to led[18]
+set_location_assignment PIN_21 -to led[17]
+set_location_assignment PIN_20 -to led[16]
+set_location_assignment PIN_36 -to led[5]
+set_location_assignment PIN_29 -to led[15]
+set_location_assignment PIN_28 -to led[14]
+set_location_assignment PIN_27 -to led[13]
+set_location_assignment PIN_25 -to led[12]
+set_location_assignment PIN_34 -to led[11]
+set_location_assignment PIN_33 -to led[10]
+set_location_assignment PIN_31 -to led[9]
+set_location_assignment PIN_30 -to led[8]
+set_location_assignment PIN_18 -to led[7]
+set_location_assignment PIN_17 -to led[6]
+set_location_assignment PIN_35 -to led[4]
+set_location_assignment PIN_41 -to led[3]
+set_location_assignment PIN_40 -to led[2]
+set_location_assignment PIN_39 -to led[1]
+set_location_assignment PIN_37 -to led[0]
+set_location_assignment PIN_80 -to mode[1]
+set_location_assignment PIN_81 -to mode[0]
+set_location_assignment PIN_76 -to max[0]
+set_location_assignment PIN_75 -to max[1]
+set_location_assignment PIN_74 -to max[2]
+set_location_assignment PIN_73 -to max[3]
+set_location_assignment PIN_70 -to max[4]
+set_location_assignment PIN_69 -to max[5]
+set_location_assignment PIN_68 -to max[6]
+set_location_assignment PIN_67 -to max[7]
+set_location_assignment PIN_77 -to set
+set_location_assignment PIN_49 -to red
+set_location_assignment PIN_79 -to start
+set_global_assignment -name MISC_FILE "C:/Users/Administrator/Desktop/pill/pill.dpf"
+set_global_assignment -name MISC_FILE "D:/Users/SteveZL/Desktop/数字逻辑课程设计/pill-4.7/pill.dpf"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_WAVEFORM_FILE pill.vwf
+set_global_assignment -name MISC_FILE "D:/Users/SteveZL/Desktop/大二下/数字逻辑课程设计/pill-4.7/pill.dpf"
+set_location_assignment PIN_57 -to cp
+set_location_assignment PIN_52 -to loudspeaker
+set_global_assignment -name MISC_FILE "D:/Users/SteveZL/Desktop/pill/pill.dpf"

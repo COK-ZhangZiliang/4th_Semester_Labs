@@ -1,0 +1,88 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x58f70e5e: mfc90 + 0x30e5e
+	0x100062ac: GCL_AFC + 0x62ac (?OnWndMsg@AFC_NESTED_FRAME@@UAEHIIJPAJ@Z + 0x3c)
+	0x58f70e19: mfc90 + 0x30e19
+	0x58f6fa0b: mfc90 + 0x2fa0b
+	0x58f6fc97: mfc90 + 0x2fc97
+	0x58f6da38: mfc90 + 0x2da38
+	0x765323a2: USER32 + 0x323a2 (Ordinal2713 + 0x6b2)
+	0x765230b5: USER32 + 0x230b5 (CallWindowProcW + 0x715)
+	0x765224d1: USER32 + 0x224d1 (MsgWaitForMultipleObjectsEx + 0x8d1)
+	0x765393a7: USER32 + 0x393a7 (SetWindowsHookExAW + 0x197)
+	0x7659600c: USER32 + 0x9600c (SendMessageA + 0x3c)
+	0x00e6636b: GCL_CUI + 0x636b (?relay_mouse_message_to_view@CUI_TOOLTIP@@IAIXHVCPoint@@@Z + 0x4b)
+	0x58f70e19: mfc90 + 0x30e19
+	0x58f6fa0b: mfc90 + 0x2fa0b
+	0x58f6fc97: mfc90 + 0x2fc97
+	0x58f6da38: mfc90 + 0x2da38
+	0x765323a2: USER32 + 0x323a2 (Ordinal2713 + 0x6b2)
+	0x765230b5: USER32 + 0x230b5 (CallWindowProcW + 0x715)
+	0x765224d1: USER32 + 0x224d1 (MsgWaitForMultipleObjectsEx + 0x8d1)
+	0x765393a7: USER32 + 0x393a7 (SetWindowsHookExAW + 0x197)
+	0x7659600c: USER32 + 0x9600c (SendMessageA + 0x3c)
+	0x17f665ce: prj_ppl + 0x265ce (prj_ppl_dll_get_template_classes + 0xfdae)
+	0x765231a7: USER32 + 0x231a7 (CallWindowProcW + 0x807)
+	</callstack>
+	<error>Current editor: RPW, STED, STED, STED, STED, STED</error>
+	<date>Thu May 25 08:26:47 2023</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>Stack Overflow
+Current editor: RPW, STED, STED, STED, STED, STED
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>F7K</sub_system>
+	<file>/quartus/fitter/f7k/f7k_pexp_packer_util.cpp</file>
+	<line>623</line>
+	<callstack>
+	0x0b0722d0: fitter_f7k + 0x22d0 (?work@F7K_EXPERT_BODY@@QAI_NXZ + 0x190)
+	0x0b0c37a3: fitter_f7k + 0x537a3 (?reset_for_pack_labs_pass@LAB_INFO@F7K_MP2_LAB_PACKER@@QAIXXZ + 0x2fc93)
+	0x0b098ad6: fitter_f7k + 0x28ad6 (?reset_for_pack_labs_pass@LAB_INFO@F7K_MP2_LAB_PACKER@@QAIXXZ + 0x4fc6)
+	0x0b099fa9: fitter_f7k + 0x29fa9 (?reset_for_pack_labs_pass@LAB_INFO@F7K_MP2_LAB_PACKER@@QAIXXZ + 0x6499)
+	0x0b09b25c: fitter_f7k + 0x2b25c (?reset_for_pack_labs_pass@LAB_INFO@F7K_MP2_LAB_PACKER@@QAIXXZ + 0x774c)
+	0x0b09b344: fitter_f7k + 0x2b344 (?reset_for_pack_labs_pass@LAB_INFO@F7K_MP2_LAB_PACKER@@QAIXXZ + 0x7834)
+	0x0b071661: fitter_f7k + 0x1661 (?prepare_design_for_place_and_route@F7K_EXPERT_BODY@@AAI_NXZ + 0x241)
+	0x0b072208: fitter_f7k + 0x2208 (?work@F7K_EXPERT_BODY@@QAI_NXZ + 0xc8)
+	0x00e1255a: ccl_thr + 0x255a (thr_mutex_unlock + 0x5a)
+	0x00ef7386: ccl_cfg_ini + 0x7386 (?cfg_is_on@@YI_NPBD_N@Z + 0x366)
+	0x0b0710e5: fitter_f7k + 0x10e5 (?work@F7K_EXPERT@@QAI_NXZ + 0x35)
+	</callstack>
+	<error>oterm_to_lender_iterm_map.size() &lt;= number_of_pia</error>
+	<date>Thu May 25 21:47:48 2023</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>oterm_to_lender_iterm_map.size() &lt;= number_of_pia
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>F7K</sub_system>
+	<file>/quartus/fitter/f7k/f7k_pexp_packer_util.cpp</file>
+	<line>623</line>
+	<callstack>
+	0x0b0722d0: fitter_f7k + 0x22d0 (?work@F7K_EXPERT_BODY@@QAI_NXZ + 0x190)
+	0x0b0c37a3: fitter_f7k + 0x537a3 (?reset_for_pack_labs_pass@LAB_INFO@F7K_MP2_LAB_PACKER@@QAIXXZ + 0x2fc93)
+	0x0b098ad6: fitter_f7k + 0x28ad6 (?reset_for_pack_labs_pass@LAB_INFO@F7K_MP2_LAB_PACKER@@QAIXXZ + 0x4fc6)
+	0x0b099fa9: fitter_f7k + 0x29fa9 (?reset_for_pack_labs_pass@LAB_INFO@F7K_MP2_LAB_PACKER@@QAIXXZ + 0x6499)
+	0x0b09b25c: fitter_f7k + 0x2b25c (?reset_for_pack_labs_pass@LAB_INFO@F7K_MP2_LAB_PACKER@@QAIXXZ + 0x774c)
+	0x0b09b344: fitter_f7k + 0x2b344 (?reset_for_pack_labs_pass@LAB_INFO@F7K_MP2_LAB_PACKER@@QAIXXZ + 0x7834)
+	0x0b071661: fitter_f7k + 0x1661 (?prepare_design_for_place_and_route@F7K_EXPERT_BODY@@AAI_NXZ + 0x241)
+	0x0b072208: fitter_f7k + 0x2208 (?work@F7K_EXPERT_BODY@@QAI_NXZ + 0xc8)
+	0x1000255a: ccl_thr + 0x255a (thr_mutex_unlock + 0x5a)
+	0x02827386: ccl_cfg_ini + 0x7386 (?cfg_is_on@@YI_NPBD_N@Z + 0x366)
+	0x0b0710e5: fitter_f7k + 0x10e5 (?work@F7K_EXPERT@@QAI_NXZ + 0x35)
+	</callstack>
+	<error>oterm_to_lender_iterm_map.size() &lt;= number_of_pia</error>
+	<date>Thu May 25 21:48:08 2023</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>oterm_to_lender_iterm_map.size() &lt;= number_of_pia
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+

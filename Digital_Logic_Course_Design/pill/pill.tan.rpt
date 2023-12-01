@@ -1,0 +1,1056 @@
+Classic Timing Analyzer report for pill
+Thu May 25 10:40:02 2023
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'clk'
+  7. tsu
+  8. tco
+  9. tpd
+ 10. th
+ 11. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                             ;
++------------------------------+-------+---------------+----------------------------------+----------------------------+-----------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                      ; From                       ; To                    ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+----------------------------------+----------------------------+-----------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 13.000 ns                        ; mode[0]                    ; total_pills:u2|hun[3] ; --         ; clk      ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 35.000 ns                        ; per_bottle:u4|max_value[4] ; loudspeaker           ; clk        ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 32.000 ns                        ; mode[1]                    ; led[15]               ; --         ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; 4.000 ns                         ; mode[0]                    ; total_pills:u2|hun[2] ; --         ; clk      ; 0            ;
+; Clock Setup: 'clk'           ; N/A   ; None          ; 25.00 MHz ( period = 40.000 ns ) ; per_bottle:u3|max_value[6] ; total_pills:u2|hun[3] ; clk        ; clk      ; 0            ;
+; Total number of failed paths ;       ;               ;                                  ;                            ;                       ;            ;          ; 0            ;
++------------------------------+-------+---------------+----------------------------------+----------------------------+-----------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EPM7128SLC84-15    ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clk             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clk'                                                                                                                                                                                                                                                                                            ;
++-----------------------------------------+-----------------------------------------------------+-------------------------------------------------+-------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack                                   ; Actual fmax (period)                                ; From                                            ; To                                              ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-----------------------------------------+-----------------------------------------------------+-------------------------------------------------+-------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[5]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[0]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[2]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[6]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[0] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[5]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[0]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[2]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[6]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[5]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[0]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[2]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[6]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[5]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[0]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[2]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[6]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[5]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[0]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[2]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u4|max_value[6]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|max_value[5]                      ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|max_value[0]                      ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|max_value[2]                      ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|max_value[6]                      ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|max_value[5]                      ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|max_value[0]                      ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|max_value[2]                      ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.00 MHz ( period = 40.000 ns )                    ; per_bottle:u3|max_value[6]                      ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 35.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[5]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[0]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[2]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[6]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[7]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[1]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[4]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[3]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[1] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[5]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[0]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[2]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[6]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[7]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[1]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[4]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[3]                      ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[5]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[0]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[2]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[6]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[7]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[1]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[4]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[3]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[5]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[0]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[2]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[6]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[7]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[1]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[4]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[3]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[5]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[0]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[2]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[6]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[7]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[1]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[4]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u4|max_value[3]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[5]                      ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[0]                      ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[2]                      ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[6]                      ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[5]                      ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[0]                      ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[2]                      ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[6]                      ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[0] ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[7]                      ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[3] ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[3] ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[1] ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[1]                      ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[4]                      ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[3]                      ; total_pills:u2|hun[0]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[0] ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[7]                      ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[3] ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[3] ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[1] ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[1]                      ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[4]                      ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 25.64 MHz ( period = 39.000 ns )                    ; per_bottle:u3|max_value[3]                      ; total_pills:u2|hun[3]                           ; clk        ; clk      ; None                        ; None                      ; 34.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[3]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[7]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[1]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[4]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[3]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[7]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[3] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[1]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[4]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[3]                      ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[0] ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[7]                      ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[3] ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[3] ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[1] ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[1]                      ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[4]                      ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[3]                      ; total_pills:u2|one[3]                           ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[0] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[7]                      ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[3] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[3] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[1] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[1]                      ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; N/A                                     ; 26.32 MHz ( period = 38.000 ns )                    ; per_bottle:u3|max_value[4]                      ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk        ; clk      ; None                        ; None                      ; 33.000 ns               ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;                                                 ;                                                 ;            ;          ;                             ;                           ;                         ;
++-----------------------------------------+-----------------------------------------------------+-------------------------------------------------+-------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; tsu                                                                                                                                                                               ;
++-----------------------------------------+-----------------------------------------------------+------------+---------+-------------------------------------------------+----------+
+; Slack                                   ; Required tsu                                        ; Actual tsu ; From    ; To                                              ; To Clock ;
++-----------------------------------------+-----------------------------------------------------+------------+---------+-------------------------------------------------+----------+
+; N/A                                     ; None                                                ; 13.000 ns  ; max[7]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[7]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[7]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[7]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[7]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[7]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[7]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[7]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[7]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[3]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[3]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[3]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[3]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[3]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[3]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[3]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[3]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[3]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; clr     ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; clr     ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; clr     ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; clr     ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; clr     ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; clr     ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; clr     ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; clr     ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; clr     ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[2]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[2]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[2]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[2]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[2]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[2]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[2]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[2]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[2]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[1]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[1]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[1]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[1]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[1]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[1]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[1]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[1]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[1]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[6]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[6]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[6]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[6]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[6]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[6]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[6]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[6]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[6]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[5]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[5]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[5]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[5]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[5]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[5]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[5]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[5]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; max[5]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; start   ; total_pills:u2|hun[0]                           ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; start   ; total_pills:u2|hun[3]                           ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; set     ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; set     ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; set     ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; set     ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; set     ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; set     ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; set     ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; set     ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; set     ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[1] ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[0] ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; total_pills:u2|one[1]                           ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[1]    ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; total_pills:u2|hun[0]                           ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[1] ; total_pills:u2|hun[3]                           ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[1] ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[0] ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; total_pills:u2|one[1]                           ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[1]    ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; total_pills:u2|hun[0]                           ; clk      ;
+; N/A                                     ; None                                                ; 13.000 ns  ; mode[0] ; total_pills:u2|hun[3]                           ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; max[7]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; max[3]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; clr     ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; max[2]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; max[1]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; max[6]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; max[5]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; start   ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; start   ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; start   ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; start   ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; start   ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; start   ; total_pills:u2|one[3]                           ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; start   ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; set     ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[1] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[1] ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[1] ; total_pills:u2|one[3]                           ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[1] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[0] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[0] ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[0] ; total_pills:u2|one[3]                           ; clk      ;
+; N/A                                     ; None                                                ; 12.000 ns  ; mode[0] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[4]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[0]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[7]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[7]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[7]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[7]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[7]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[7]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[3]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[3]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[3]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[3]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[3]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[3]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; clr     ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; clr     ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; clr     ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; clr     ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; clr     ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; clr     ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[2]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[2]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[2]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[2]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[2]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[1]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[1]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[1]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[1]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[1]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[6]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[6]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[6]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[6]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[6]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[5]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[5]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[5]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[5]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; max[5]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; start   ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; set     ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; set     ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; set     ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; set     ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; set     ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; set     ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[1] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[1] ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[1] ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[1] ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[1] ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[1] ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[1] ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[0] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[0] ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[0] ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[0] ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[0] ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[0] ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 5.000 ns   ; mode[0] ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns   ; max[4]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns   ; max[0]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns   ; max[2]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns   ; max[1]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;            ;         ;                                                 ;          ;
++-----------------------------------------+-----------------------------------------------------+------------+---------+-------------------------------------------------+----------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                            ;
++-------+--------------+------------+-------------------------------------------------+-------------+------------+
+; Slack ; Required tco ; Actual tco ; From                                            ; To          ; From Clock ;
++-------+--------------+------------+-------------------------------------------------+-------------+------------+
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u3|max_value[7]                      ; red         ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u3|max_value[6]                      ; red         ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[7]                      ; red         ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[5]                      ; red         ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[1]                      ; red         ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[4]                      ; red         ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u3|max_value[7]                      ; green       ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u3|max_value[6]                      ; green       ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[7]                      ; green       ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[5]                      ; green       ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[1]                      ; green       ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[4]                      ; green       ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u3|max_value[7]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u3|max_value[6]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[7]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[5]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[1]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 35.000 ns  ; per_bottle:u4|max_value[4]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[5]                      ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[1]                      ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[0]                      ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[4]                      ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[2]                      ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[3]                      ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u4|max_value[0]                      ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u4|max_value[3]                      ; red         ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[5]                      ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[1]                      ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[0]                      ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[4]                      ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[2]                      ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[3]                      ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u4|max_value[0]                      ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u4|max_value[3]                      ; green       ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[5]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[1]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[0]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[4]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u3|max_value[3]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u4|max_value[0]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 34.000 ns  ; per_bottle:u4|max_value[3]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[0] ; red         ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[3] ; red         ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[3] ; red         ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[1] ; red         ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u4|max_value[2]                      ; red         ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u4|max_value[6]                      ; red         ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[0] ; green       ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[3] ; green       ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[3] ; green       ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[1] ; green       ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u4|max_value[2]                      ; green       ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u4|max_value[6]                      ; green       ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u3|max_value[2]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u4|max_value[2]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 33.000 ns  ; per_bottle:u4|max_value[6]                      ; loudspeaker ; clk        ;
+; N/A   ; None         ; 32.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[3] ; led[15]     ; clk        ;
+; N/A   ; None         ; 32.000 ns  ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; led[15]     ; clk        ;
+; N/A   ; None         ; 32.000 ns  ; per_bottle:u4|max_value[3]                      ; led[3]      ; clk        ;
+; N/A   ; None         ; 25.000 ns  ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[0]    ; led[12]     ; clk        ;
+; N/A   ; None         ; 25.000 ns  ; per_bottle:u4|max_value[0]                      ; led[0]      ; clk        ;
+; N/A   ; None         ; 25.000 ns  ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[2]    ; led[14]     ; clk        ;
+; N/A   ; None         ; 25.000 ns  ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[1]    ; led[13]     ; clk        ;
+; N/A   ; None         ; 25.000 ns  ; per_bottle:u4|max_value[2]                      ; led[2]      ; clk        ;
+; N/A   ; None         ; 25.000 ns  ; per_bottle:u4|max_value[1]                      ; led[1]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[0] ; led[12]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|max_value[4]                      ; led[12]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[0] ; led[0]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; led[7]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|max_value[7]                      ; led[7]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; led[6]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|max_value[6]                      ; led[6]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|max_value[7]                      ; led[15]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; led[5]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|max_value[5]                      ; led[5]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[2] ; led[14]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|max_value[6]                      ; led[14]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; led[4]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|max_value[4]                      ; led[4]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|lpm_counter:pills_h_rtl_3|dffs[1] ; led[13]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|max_value[5]                      ; led[13]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[1] ; led[9]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|max_value[1]                      ; led[9]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; total_pills:u2|one[1]                           ; led[9]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; led[3]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[3] ; led[11]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|max_value[3]                      ; led[11]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; total_pills:u2|one[3]                           ; led[11]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; led[2]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[2] ; led[10]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|max_value[2]                      ; led[10]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; total_pills:u2|one[2]                           ; led[10]     ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[1] ; led[1]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|lpm_counter:pills_l_rtl_1|dffs[0] ; led[8]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; per_bottle:u3|max_value[0]                      ; led[8]      ; clk        ;
+; N/A   ; None         ; 24.000 ns  ; total_pills:u2|one[0]                           ; led[8]      ; clk        ;
+; N/A   ; None         ; 15.000 ns  ; total_pills:u2|hun[3]                           ; led[19]     ; clk        ;
+; N/A   ; None         ; 15.000 ns  ; total_pills:u2|hun[2]                           ; led[18]     ; clk        ;
+; N/A   ; None         ; 15.000 ns  ; total_pills:u2|hun[1]                           ; led[17]     ; clk        ;
+; N/A   ; None         ; 15.000 ns  ; total_pills:u2|hun[0]                           ; led[16]     ; clk        ;
++-------+--------------+------------+-------------------------------------------------+-------------+------------+
+
+
++---------------------------------------------------------------------+
+; tpd                                                                 ;
++-------+-------------------+-----------------+---------+-------------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From    ; To          ;
++-------+-------------------+-----------------+---------+-------------+
+; N/A   ; None              ; 32.000 ns       ; mode[0] ; led[15]     ;
+; N/A   ; None              ; 32.000 ns       ; mode[1] ; led[15]     ;
+; N/A   ; None              ; 27.000 ns       ; max[6]  ; red         ;
+; N/A   ; None              ; 27.000 ns       ; max[7]  ; red         ;
+; N/A   ; None              ; 27.000 ns       ; max[6]  ; green       ;
+; N/A   ; None              ; 27.000 ns       ; max[7]  ; green       ;
+; N/A   ; None              ; 27.000 ns       ; max[6]  ; loudspeaker ;
+; N/A   ; None              ; 27.000 ns       ; max[7]  ; loudspeaker ;
+; N/A   ; None              ; 26.000 ns       ; max[2]  ; red         ;
+; N/A   ; None              ; 26.000 ns       ; max[3]  ; red         ;
+; N/A   ; None              ; 26.000 ns       ; max[2]  ; green       ;
+; N/A   ; None              ; 26.000 ns       ; max[3]  ; green       ;
+; N/A   ; None              ; 26.000 ns       ; max[2]  ; loudspeaker ;
+; N/A   ; None              ; 26.000 ns       ; max[3]  ; loudspeaker ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[12]     ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[12]     ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[0]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[0]      ;
+; N/A   ; None              ; 24.000 ns       ; set     ; led[0]      ;
+; N/A   ; None              ; 24.000 ns       ; clk     ; led[0]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[14]     ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[14]     ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[13]     ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[13]     ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[9]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[9]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[3]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[3]      ;
+; N/A   ; None              ; 24.000 ns       ; set     ; led[3]      ;
+; N/A   ; None              ; 24.000 ns       ; clk     ; led[3]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[11]     ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[11]     ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[2]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[2]      ;
+; N/A   ; None              ; 24.000 ns       ; set     ; led[2]      ;
+; N/A   ; None              ; 24.000 ns       ; clk     ; led[2]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[10]     ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[10]     ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[1]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[1]      ;
+; N/A   ; None              ; 24.000 ns       ; set     ; led[1]      ;
+; N/A   ; None              ; 24.000 ns       ; clk     ; led[1]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[0] ; led[8]      ;
+; N/A   ; None              ; 24.000 ns       ; mode[1] ; led[8]      ;
+; N/A   ; None              ; 24.000 ns       ; max[5]  ; red         ;
+; N/A   ; None              ; 24.000 ns       ; max[1]  ; red         ;
+; N/A   ; None              ; 24.000 ns       ; max[5]  ; green       ;
+; N/A   ; None              ; 24.000 ns       ; max[1]  ; green       ;
+; N/A   ; None              ; 24.000 ns       ; max[5]  ; loudspeaker ;
+; N/A   ; None              ; 24.000 ns       ; max[1]  ; loudspeaker ;
+; N/A   ; None              ; 23.000 ns       ; set     ; led[15]     ;
+; N/A   ; None              ; 23.000 ns       ; clk     ; led[15]     ;
+; N/A   ; None              ; 23.000 ns       ; set     ; led[9]      ;
+; N/A   ; None              ; 23.000 ns       ; clk     ; led[9]      ;
+; N/A   ; None              ; 23.000 ns       ; set     ; led[11]     ;
+; N/A   ; None              ; 23.000 ns       ; clk     ; led[11]     ;
+; N/A   ; None              ; 23.000 ns       ; set     ; led[10]     ;
+; N/A   ; None              ; 23.000 ns       ; clk     ; led[10]     ;
+; N/A   ; None              ; 23.000 ns       ; set     ; led[8]      ;
+; N/A   ; None              ; 23.000 ns       ; clk     ; led[8]      ;
+; N/A   ; None              ; 22.000 ns       ; mode[0] ; led[19]     ;
+; N/A   ; None              ; 22.000 ns       ; mode[1] ; led[19]     ;
+; N/A   ; None              ; 22.000 ns       ; mode[0] ; led[18]     ;
+; N/A   ; None              ; 22.000 ns       ; mode[1] ; led[18]     ;
+; N/A   ; None              ; 22.000 ns       ; mode[0] ; led[17]     ;
+; N/A   ; None              ; 22.000 ns       ; mode[1] ; led[17]     ;
+; N/A   ; None              ; 22.000 ns       ; mode[0] ; led[7]      ;
+; N/A   ; None              ; 22.000 ns       ; mode[1] ; led[7]      ;
+; N/A   ; None              ; 22.000 ns       ; set     ; led[7]      ;
+; N/A   ; None              ; 22.000 ns       ; clk     ; led[7]      ;
+; N/A   ; None              ; 22.000 ns       ; mode[0] ; led[16]     ;
+; N/A   ; None              ; 22.000 ns       ; mode[1] ; led[16]     ;
+; N/A   ; None              ; 22.000 ns       ; mode[0] ; led[6]      ;
+; N/A   ; None              ; 22.000 ns       ; mode[1] ; led[6]      ;
+; N/A   ; None              ; 22.000 ns       ; set     ; led[6]      ;
+; N/A   ; None              ; 22.000 ns       ; clk     ; led[6]      ;
+; N/A   ; None              ; 22.000 ns       ; mode[0] ; led[5]      ;
+; N/A   ; None              ; 22.000 ns       ; mode[1] ; led[5]      ;
+; N/A   ; None              ; 22.000 ns       ; set     ; led[5]      ;
+; N/A   ; None              ; 22.000 ns       ; clk     ; led[5]      ;
+; N/A   ; None              ; 22.000 ns       ; mode[0] ; led[4]      ;
+; N/A   ; None              ; 22.000 ns       ; mode[1] ; led[4]      ;
+; N/A   ; None              ; 22.000 ns       ; set     ; led[4]      ;
+; N/A   ; None              ; 22.000 ns       ; clk     ; led[4]      ;
+; N/A   ; None              ; 15.000 ns       ; set     ; led[12]     ;
+; N/A   ; None              ; 15.000 ns       ; clk     ; led[12]     ;
+; N/A   ; None              ; 15.000 ns       ; set     ; led[14]     ;
+; N/A   ; None              ; 15.000 ns       ; clk     ; led[14]     ;
+; N/A   ; None              ; 15.000 ns       ; set     ; led[13]     ;
+; N/A   ; None              ; 15.000 ns       ; clk     ; led[13]     ;
+; N/A   ; None              ; 15.000 ns       ; start   ; red         ;
+; N/A   ; None              ; 15.000 ns       ; clk     ; red         ;
+; N/A   ; None              ; 15.000 ns       ; mode[0] ; green       ;
+; N/A   ; None              ; 15.000 ns       ; mode[1] ; green       ;
+; N/A   ; None              ; 15.000 ns       ; start   ; green       ;
+; N/A   ; None              ; 15.000 ns       ; cp      ; loudspeaker ;
+; N/A   ; None              ; 15.000 ns       ; clk     ; loudspeaker ;
++-------+-------------------+-----------------+---------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; th                                                                                                                                                                               ;
++-----------------------------------------+-----------------------------------------------------+-----------+---------+-------------------------------------------------+----------+
+; Minimum Slack                           ; Required th                                         ; Actual th ; From    ; To                                              ; To Clock ;
++-----------------------------------------+-----------------------------------------------------+-----------+---------+-------------------------------------------------+----------+
+; N/A                                     ; None                                                ; 4.000 ns  ; max[4]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[4]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[0]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[0]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[7]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[7]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[7]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[7]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[7]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[7]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[7]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[3]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[3]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[3]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[3]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[3]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[3]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[3]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; clr     ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[2]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[2]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[2]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[2]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[2]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[2]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[2]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[1]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[1]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[1]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[1]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[1]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[1]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[1]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[6]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[6]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[6]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[6]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[6]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[6]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[6]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[5]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[5]  ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[5]  ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[5]  ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[5]  ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[5]  ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; max[5]  ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[1] ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[0] ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; total_pills:u2|one[0]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; total_pills:u2|one[2]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; total_pills:u2|one[1]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[2]    ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[1]    ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[0]    ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; total_pills:u2|hun[1]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; start   ; total_pills:u2|hun[2]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; set     ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; set     ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; set     ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; set     ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; set     ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; set     ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; total_pills:u2|one[0]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; total_pills:u2|one[2]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[2]    ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[0]    ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; total_pills:u2|hun[1]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[1] ; total_pills:u2|hun[2]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u4|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u4|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u4|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u4|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u4|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; total_pills:u2|one[0]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; total_pills:u2|one[2]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[2]    ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[0]    ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; total_pills:u2|hun[1]                           ; clk      ;
+; N/A                                     ; None                                                ; 4.000 ns  ; mode[0] ; total_pills:u2|hun[2]                           ; clk      ;
+; N/A                                     ; None                                                ; 3.000 ns  ; clr     ; per_bottle:u4|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; max[7]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; max[3]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; clr     ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; max[2]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; max[1]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; max[6]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; max[5]  ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; start   ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; start   ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; start   ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; start   ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; start   ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; start   ; total_pills:u2|one[3]                           ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; start   ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; start   ; total_pills:u2|hun[0]                           ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; set     ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[1] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[1] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[1] ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[1] ; total_pills:u2|one[3]                           ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[1] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[1] ; total_pills:u2|hun[0]                           ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[0] ; per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[3] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[2] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[0] ; per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[1] ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[0] ; per_bottle:u4|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[0] ; total_pills:u2|one[3]                           ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[0] ; total_pills:u2|lpm_counter:ten_rtl_2|dffs[3]    ; clk      ;
+; N/A                                     ; None                                                ; -4.000 ns ; mode[0] ; total_pills:u2|hun[0]                           ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[7]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[7]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[7]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[7]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[7]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[7]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[7]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[7]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[3]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[3]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[3]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[3]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[3]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[3]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[3]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[3]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; clr     ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[2]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[2]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[2]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[2]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[2]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[2]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[2]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[2]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[1]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[1]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[1]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[1]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[1]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[1]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[1]  ; per_bottle:u3|max_value[6]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[1]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[6]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[6]  ; per_bottle:u3|max_value[5]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[6]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[6]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[6]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[6]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[6]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[6]  ; per_bottle:u4|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[5]  ; per_bottle:u3|max_value[7]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[5]  ; per_bottle:u3|max_value[1]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[5]  ; per_bottle:u3|max_value[0]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[5]  ; per_bottle:u3|max_value[4]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[5]  ; per_bottle:u3|max_value[2]                      ; clk      ;
+; N/A                                     ; None                                                ; -5.000 ns ; max[5]  ; per_bottle:u3|max_value[3]                      ; clk      ;
+; Timing analysis restricted to 200 rows. ; To change the limit use Settings (Assignments menu) ;           ;         ;                                                 ;          ;
++-----------------------------------------+-----------------------------------------------------+-----------+---------+-------------------------------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Thu May 25 10:40:02 2023
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off pill -c pill
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Timing Analysis does not support the analysis of latches as synchronous elements for the currently selected device family
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clk" is an undefined clock
+Info: Clock "clk" has Internal fmax of 25.0 MHz between source register "per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2]" and destination register "per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0]" (period= 40.0 ns)
+    Info: + Longest register to register delay is 35.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC107; Fanout = 21; REG Node = 'per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2]'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 8.000 ns; Loc. = LC65; Fanout = 1; COMB Node = 'per_bottle:u4|Equal1~61'
+        Info: 3: + IC(0.000 ns) + CELL(2.000 ns) = 10.000 ns; Loc. = LC66; Fanout = 44; COMB Node = 'per_bottle:u4|Equal1~52'
+        Info: 4: + IC(2.000 ns) + CELL(7.000 ns) = 19.000 ns; Loc. = LC58; Fanout = 15; COMB Node = 'per_bottle:u4|Equal1~60sexpbal'
+        Info: 5: + IC(2.000 ns) + CELL(8.000 ns) = 29.000 ns; Loc. = SEXP52; Fanout = 1; COMB Node = 'per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0]~65'
+        Info: 6: + IC(0.000 ns) + CELL(6.000 ns) = 35.000 ns; Loc. = LC63; Fanout = 13; REG Node = 'per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0]'
+        Info: Total cell delay = 29.000 ns ( 82.86 % )
+        Info: Total interconnect delay = 6.000 ns ( 17.14 % )
+    Info: - Smallest clock skew is 0.000 ns
+        Info: + Shortest clock path from clock "clk" to destination register is 10.000 ns
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_58; Fanout = 56; CLK Node = 'clk'
+            Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC63; Fanout = 13; REG Node = 'per_bottle:u4|lpm_counter:pills_h_rtl_4|dffs[0]'
+            Info: Total cell delay = 8.000 ns ( 80.00 % )
+            Info: Total interconnect delay = 2.000 ns ( 20.00 % )
+        Info: - Longest clock path from clock "clk" to source register is 10.000 ns
+            Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_58; Fanout = 56; CLK Node = 'clk'
+            Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC107; Fanout = 21; REG Node = 'per_bottle:u4|lpm_counter:pills_l_rtl_0|dffs[2]'
+            Info: Total cell delay = 8.000 ns ( 80.00 % )
+            Info: Total interconnect delay = 2.000 ns ( 20.00 % )
+    Info: + Micro clock to output delay of source is 1.000 ns
+    Info: + Micro setup delay of destination is 4.000 ns
+Info: tsu for register "per_bottle:u3|max_value[7]" (data pin = "max[7]", clock pin = "clk") is 13.000 ns
+    Info: + Longest pin to register delay is 19.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_67; Fanout = 35; PIN Node = 'max[7]'
+        Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC94; Fanout = 32; COMB Node = 'per_bottle:u3|max_value~150'
+        Info: 3: + IC(2.000 ns) + CELL(6.000 ns) = 19.000 ns; Loc. = LC15; Fanout = 9; REG Node = 'per_bottle:u3|max_value[7]'
+        Info: Total cell delay = 15.000 ns ( 78.95 % )
+        Info: Total interconnect delay = 4.000 ns ( 21.05 % )
+    Info: + Micro setup delay of destination is 4.000 ns
+    Info: - Shortest clock path from clock "clk" to destination register is 10.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_58; Fanout = 56; CLK Node = 'clk'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC15; Fanout = 9; REG Node = 'per_bottle:u3|max_value[7]'
+        Info: Total cell delay = 8.000 ns ( 80.00 % )
+        Info: Total interconnect delay = 2.000 ns ( 20.00 % )
+Info: tco from clock "clk" to destination pin "red" through register "per_bottle:u3|max_value[7]" is 35.000 ns
+    Info: + Longest clock path from clock "clk" to source register is 10.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_58; Fanout = 56; CLK Node = 'clk'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC15; Fanout = 9; REG Node = 'per_bottle:u3|max_value[7]'
+        Info: Total cell delay = 8.000 ns ( 80.00 % )
+        Info: Total interconnect delay = 2.000 ns ( 20.00 % )
+    Info: + Micro clock to output delay of source is 1.000 ns
+    Info: + Longest register to pin delay is 24.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC15; Fanout = 9; REG Node = 'per_bottle:u3|max_value[7]'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 8.000 ns; Loc. = LC11; Fanout = 1; COMB Node = 'comb~51'
+        Info: 3: + IC(0.000 ns) + CELL(1.000 ns) = 9.000 ns; Loc. = LC12; Fanout = 1; COMB Node = 'comb~47'
+        Info: 4: + IC(0.000 ns) + CELL(2.000 ns) = 11.000 ns; Loc. = LC13; Fanout = 8; COMB Node = 'comb~42'
+        Info: 5: + IC(2.000 ns) + CELL(7.000 ns) = 20.000 ns; Loc. = LC73; Fanout = 1; COMB Node = 'control:u1|red~10'
+        Info: 6: + IC(0.000 ns) + CELL(4.000 ns) = 24.000 ns; Loc. = PIN_49; Fanout = 0; PIN Node = 'red'
+        Info: Total cell delay = 20.000 ns ( 83.33 % )
+        Info: Total interconnect delay = 4.000 ns ( 16.67 % )
+Info: Longest tpd from source pin "mode[0]" to destination pin "led[15]" is 32.000 ns
+    Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_81; Fanout = 206; PIN Node = 'mode[0]'
+    Info: 2: + IC(2.000 ns) + CELL(7.000 ns) = 11.000 ns; Loc. = LC27; Fanout = 40; COMB Node = 'control:u1|Mux4~4'
+    Info: 3: + IC(2.000 ns) + CELL(8.000 ns) = 21.000 ns; Loc. = SEXP34; Fanout = 5; COMB Node = 'display:u5|led[7]~178'
+    Info: 4: + IC(0.000 ns) + CELL(7.000 ns) = 28.000 ns; Loc. = LC38; Fanout = 1; COMB Node = 'display:u5|led[7]~183'
+    Info: 5: + IC(0.000 ns) + CELL(4.000 ns) = 32.000 ns; Loc. = PIN_29; Fanout = 0; PIN Node = 'led[15]'
+    Info: Total cell delay = 28.000 ns ( 87.50 % )
+    Info: Total interconnect delay = 4.000 ns ( 12.50 % )
+Info: th for register "per_bottle:u3|max_value[4]" (data pin = "max[4]", clock pin = "clk") is 4.000 ns
+    Info: + Longest clock path from clock "clk" to destination register is 10.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_58; Fanout = 56; CLK Node = 'clk'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC95; Fanout = 11; REG Node = 'per_bottle:u3|max_value[4]'
+        Info: Total cell delay = 8.000 ns ( 80.00 % )
+        Info: Total interconnect delay = 2.000 ns ( 20.00 % )
+    Info: + Micro hold delay of destination is 4.000 ns
+    Info: - Shortest pin to register delay is 10.000 ns
+        Info: 1: + IC(0.000 ns) + CELL(2.000 ns) = 2.000 ns; Loc. = PIN_70; Fanout = 11; PIN Node = 'max[4]'
+        Info: 2: + IC(2.000 ns) + CELL(6.000 ns) = 10.000 ns; Loc. = LC95; Fanout = 11; REG Node = 'per_bottle:u3|max_value[4]'
+        Info: Total cell delay = 8.000 ns ( 80.00 % )
+        Info: Total interconnect delay = 2.000 ns ( 20.00 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 168 megabytes
+    Info: Processing ended: Thu May 25 10:40:02 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/sign_in">
+        <file>help.png</file>
+        <file>hide_pwd.png</file>
+        <file>show_pwd.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1046 @@
+Simulator report for vga_display
+Thu May 25 18:32:17 2023
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 741 nodes    ;
+; Simulation Coverage         ;      81.11 % ;
+; Total Number of Transitions ; 9649867      ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX7000S     ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      81.11 % ;
+; Total nodes checked                                 ; 741          ;
+; Total output ports checked                          ; 741          ;
+; Total output ports with complete 1/0-value coverage ; 601          ;
+; Total output ports with no 1/0-value coverage       ; 140          ;
+; Total output ports with no 1-value coverage         ; 140          ;
+; Total output ports with no 0-value coverage         ; 140          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                            ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                        ; Output Port Name                                                                 ; Output Port Type ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |vga_display|temp_color[0]                                                       ; |vga_display|temp_color[0]                                                       ; out              ;
+; |vga_display|v_count~0                                                           ; |vga_display|v_count~0                                                           ; out              ;
+; |vga_display|v_count~1                                                           ; |vga_display|v_count~1                                                           ; out              ;
+; |vga_display|v_count~2                                                           ; |vga_display|v_count~2                                                           ; out              ;
+; |vga_display|v_count~3                                                           ; |vga_display|v_count~3                                                           ; out              ;
+; |vga_display|v_count~4                                                           ; |vga_display|v_count~4                                                           ; out              ;
+; |vga_display|v_count~5                                                           ; |vga_display|v_count~5                                                           ; out              ;
+; |vga_display|v_count~6                                                           ; |vga_display|v_count~6                                                           ; out              ;
+; |vga_display|v_count~7                                                           ; |vga_display|v_count~7                                                           ; out              ;
+; |vga_display|v_count~8                                                           ; |vga_display|v_count~8                                                           ; out              ;
+; |vga_display|v_count~9                                                           ; |vga_display|v_count~9                                                           ; out              ;
+; |vga_display|h_count~0                                                           ; |vga_display|h_count~0                                                           ; out              ;
+; |vga_display|h_count~1                                                           ; |vga_display|h_count~1                                                           ; out              ;
+; |vga_display|h_count~2                                                           ; |vga_display|h_count~2                                                           ; out              ;
+; |vga_display|h_count~3                                                           ; |vga_display|h_count~3                                                           ; out              ;
+; |vga_display|h_count~4                                                           ; |vga_display|h_count~4                                                           ; out              ;
+; |vga_display|v_count~10                                                          ; |vga_display|v_count~10                                                          ; out              ;
+; |vga_display|v_count~11                                                          ; |vga_display|v_count~11                                                          ; out              ;
+; |vga_display|v_count~12                                                          ; |vga_display|v_count~12                                                          ; out              ;
+; |vga_display|v_count~13                                                          ; |vga_display|v_count~13                                                          ; out              ;
+; |vga_display|v_count~14                                                          ; |vga_display|v_count~14                                                          ; out              ;
+; |vga_display|v_count~15                                                          ; |vga_display|v_count~15                                                          ; out              ;
+; |vga_display|v_count~16                                                          ; |vga_display|v_count~16                                                          ; out              ;
+; |vga_display|v_count~17                                                          ; |vga_display|v_count~17                                                          ; out              ;
+; |vga_display|v_count~18                                                          ; |vga_display|v_count~18                                                          ; out              ;
+; |vga_display|v_count~19                                                          ; |vga_display|v_count~19                                                          ; out              ;
+; |vga_display|process_1~0                                                         ; |vga_display|process_1~0                                                         ; out0             ;
+; |vga_display|process_1~1                                                         ; |vga_display|process_1~1                                                         ; out0             ;
+; |vga_display|process_1~2                                                         ; |vga_display|process_1~2                                                         ; out0             ;
+; |vga_display|process_1~3                                                         ; |vga_display|process_1~3                                                         ; out0             ;
+; |vga_display|process_1~4                                                         ; |vga_display|process_1~4                                                         ; out0             ;
+; |vga_display|process_1~6                                                         ; |vga_display|process_1~6                                                         ; out0             ;
+; |vga_display|process_1~7                                                         ; |vga_display|process_1~7                                                         ; out0             ;
+; |vga_display|process_1~8                                                         ; |vga_display|process_1~8                                                         ; out0             ;
+; |vga_display|process_1~9                                                         ; |vga_display|process_1~9                                                         ; out0             ;
+; |vga_display|h_part[3]~0                                                         ; |vga_display|h_part[3]~0                                                         ; out0             ;
+; |vga_display|v_count[0]                                                          ; |vga_display|v_count[0]                                                          ; regout           ;
+; |vga_display|h_part[3]~1                                                         ; |vga_display|h_part[3]~1                                                         ; out0             ;
+; |vga_display|h_part[3]~2                                                         ; |vga_display|h_part[3]~2                                                         ; out              ;
+; |vga_display|h_part[3]~3                                                         ; |vga_display|h_part[3]~3                                                         ; out0             ;
+; |vga_display|h_part[3]~4                                                         ; |vga_display|h_part[3]~4                                                         ; out              ;
+; |vga_display|v_count[1]                                                          ; |vga_display|v_count[1]                                                          ; regout           ;
+; |vga_display|h_part[3]~5                                                         ; |vga_display|h_part[3]~5                                                         ; out0             ;
+; |vga_display|h_part[3]~6                                                         ; |vga_display|h_part[3]~6                                                         ; out              ;
+; |vga_display|h_part[2]~7                                                         ; |vga_display|h_part[2]~7                                                         ; out              ;
+; |vga_display|h_part[3]~8                                                         ; |vga_display|h_part[3]~8                                                         ; out0             ;
+; |vga_display|h_part[3]~9                                                         ; |vga_display|h_part[3]~9                                                         ; out              ;
+; |vga_display|h_part[2]~10                                                        ; |vga_display|h_part[2]~10                                                        ; out              ;
+; |vga_display|h_part[1]~11                                                        ; |vga_display|h_part[1]~11                                                        ; out              ;
+; |vga_display|v_count[2]                                                          ; |vga_display|v_count[2]                                                          ; regout           ;
+; |vga_display|h_part[3]~12                                                        ; |vga_display|h_part[3]~12                                                        ; out0             ;
+; |vga_display|h_part[0]~13                                                        ; |vga_display|h_part[0]~13                                                        ; out              ;
+; |vga_display|v_part[3]~0                                                         ; |vga_display|v_part[3]~0                                                         ; out              ;
+; |vga_display|v_part[1]~1                                                         ; |vga_display|v_part[1]~1                                                         ; out              ;
+; |vga_display|h_part[0]~14                                                        ; |vga_display|h_part[0]~14                                                        ; out              ;
+; |vga_display|v_part[3]~2                                                         ; |vga_display|v_part[3]~2                                                         ; out              ;
+; |vga_display|v_part[2]~3                                                         ; |vga_display|v_part[2]~3                                                         ; out              ;
+; |vga_display|v_part[1]~4                                                         ; |vga_display|v_part[1]~4                                                         ; out              ;
+; |vga_display|h_part[0]~15                                                        ; |vga_display|h_part[0]~15                                                        ; out              ;
+; |vga_display|v_part[3]~5                                                         ; |vga_display|v_part[3]~5                                                         ; out              ;
+; |vga_display|v_part[2]~6                                                         ; |vga_display|v_part[2]~6                                                         ; out              ;
+; |vga_display|v_part[1]~7                                                         ; |vga_display|v_part[1]~7                                                         ; out              ;
+; |vga_display|h_part[3]~16                                                        ; |vga_display|h_part[3]~16                                                        ; out              ;
+; |vga_display|h_part[2]~17                                                        ; |vga_display|h_part[2]~17                                                        ; out              ;
+; |vga_display|h_part[1]~18                                                        ; |vga_display|h_part[1]~18                                                        ; out              ;
+; |vga_display|h_part[0]~19                                                        ; |vga_display|h_part[0]~19                                                        ; out              ;
+; |vga_display|v_part[3]~8                                                         ; |vga_display|v_part[3]~8                                                         ; out              ;
+; |vga_display|v_part[2]~9                                                         ; |vga_display|v_part[2]~9                                                         ; out              ;
+; |vga_display|v_part[1]~10                                                        ; |vga_display|v_part[1]~10                                                        ; out              ;
+; |vga_display|v_part[0]~11                                                        ; |vga_display|v_part[0]~11                                                        ; out0             ;
+; |vga_display|v_part[0]~12                                                        ; |vga_display|v_part[0]~12                                                        ; out0             ;
+; |vga_display|v_part[0]~13                                                        ; |vga_display|v_part[0]~13                                                        ; out              ;
+; |vga_display|temp_color[1]~0                                                     ; |vga_display|temp_color[1]~0                                                     ; out              ;
+; |vga_display|temp_color[1]~1                                                     ; |vga_display|temp_color[1]~1                                                     ; out              ;
+; |vga_display|temp_color[1]~2                                                     ; |vga_display|temp_color[1]~2                                                     ; out              ;
+; |vga_display|temp_color[1]~3                                                     ; |vga_display|temp_color[1]~3                                                     ; out              ;
+; |vga_display|temp_color[1]~4                                                     ; |vga_display|temp_color[1]~4                                                     ; out              ;
+; |vga_display|temp_color[1]~5                                                     ; |vga_display|temp_color[1]~5                                                     ; out              ;
+; |vga_display|temp_color[1]~6                                                     ; |vga_display|temp_color[1]~6                                                     ; out              ;
+; |vga_display|temp_color[1]~7                                                     ; |vga_display|temp_color[1]~7                                                     ; out              ;
+; |vga_display|temp_color[1]~8                                                     ; |vga_display|temp_color[1]~8                                                     ; out              ;
+; |vga_display|temp_color[1]~9                                                     ; |vga_display|temp_color[1]~9                                                     ; out              ;
+; |vga_display|comb~3                                                              ; |vga_display|comb~3                                                              ; out0             ;
+; |vga_display|temp_color[0]~10                                                    ; |vga_display|temp_color[0]~10                                                    ; out              ;
+; |vga_display|temp_color~88                                                       ; |vga_display|temp_color~88                                                       ; out              ;
+; |vga_display|temp_color~89                                                       ; |vga_display|temp_color~89                                                       ; out              ;
+; |vga_display|temp_color~90                                                       ; |vga_display|temp_color~90                                                       ; out              ;
+; |vga_display|temp_color~91                                                       ; |vga_display|temp_color~91                                                       ; out              ;
+; |vga_display|temp_color~92                                                       ; |vga_display|temp_color~92                                                       ; out              ;
+; |vga_display|temp_color~93                                                       ; |vga_display|temp_color~93                                                       ; out              ;
+; |vga_display|temp_color~94                                                       ; |vga_display|temp_color~94                                                       ; out              ;
+; |vga_display|temp_color[0]~11                                                    ; |vga_display|temp_color[0]~11                                                    ; out              ;
+; |vga_display|temp_color[0]~12                                                    ; |vga_display|temp_color[0]~12                                                    ; out              ;
+; |vga_display|temp_color~95                                                       ; |vga_display|temp_color~95                                                       ; out              ;
+; |vga_display|temp_color~96                                                       ; |vga_display|temp_color~96                                                       ; out              ;
+; |vga_display|temp_color~97                                                       ; |vga_display|temp_color~97                                                       ; out              ;
+; |vga_display|temp_color~98                                                       ; |vga_display|temp_color~98                                                       ; out              ;
+; |vga_display|temp_color~99                                                       ; |vga_display|temp_color~99                                                       ; out              ;
+; |vga_display|temp_color~100                                                      ; |vga_display|temp_color~100                                                      ; out              ;
+; |vga_display|temp_color~101                                                      ; |vga_display|temp_color~101                                                      ; out              ;
+; |vga_display|temp_color~102                                                      ; |vga_display|temp_color~102                                                      ; out              ;
+; |vga_display|temp_color~103                                                      ; |vga_display|temp_color~103                                                      ; out              ;
+; |vga_display|temp_color~104                                                      ; |vga_display|temp_color~104                                                      ; out              ;
+; |vga_display|temp_color~105                                                      ; |vga_display|temp_color~105                                                      ; out              ;
+; |vga_display|temp_color~106                                                      ; |vga_display|temp_color~106                                                      ; out              ;
+; |vga_display|temp_color~107                                                      ; |vga_display|temp_color~107                                                      ; out              ;
+; |vga_display|temp_color~108                                                      ; |vga_display|temp_color~108                                                      ; out              ;
+; |vga_display|temp_color~109                                                      ; |vga_display|temp_color~109                                                      ; out              ;
+; |vga_display|temp_color~110                                                      ; |vga_display|temp_color~110                                                      ; out              ;
+; |vga_display|temp_color~111                                                      ; |vga_display|temp_color~111                                                      ; out              ;
+; |vga_display|temp_color~112                                                      ; |vga_display|temp_color~112                                                      ; out              ;
+; |vga_display|temp_color~113                                                      ; |vga_display|temp_color~113                                                      ; out              ;
+; |vga_display|temp_color~114                                                      ; |vga_display|temp_color~114                                                      ; out              ;
+; |vga_display|temp_color[0]~13                                                    ; |vga_display|temp_color[0]~13                                                    ; out              ;
+; |vga_display|temp_color[0]~14                                                    ; |vga_display|temp_color[0]~14                                                    ; out              ;
+; |vga_display|h_part[3]~20                                                        ; |vga_display|h_part[3]~20                                                        ; out0             ;
+; |vga_display|h_part[3]~21                                                        ; |vga_display|h_part[3]~21                                                        ; out              ;
+; |vga_display|temp_color[2]~15                                                    ; |vga_display|temp_color[2]~15                                                    ; out              ;
+; |vga_display|temp_color[1]~16                                                    ; |vga_display|temp_color[1]~16                                                    ; out              ;
+; |vga_display|h_part[3]~22                                                        ; |vga_display|h_part[3]~22                                                        ; out0             ;
+; |vga_display|h_part[3]~23                                                        ; |vga_display|h_part[3]~23                                                        ; out              ;
+; |vga_display|h_part[3]~24                                                        ; |vga_display|h_part[3]~24                                                        ; out0             ;
+; |vga_display|h_part[3]~25                                                        ; |vga_display|h_part[3]~25                                                        ; out              ;
+; |vga_display|h_part[3]~26                                                        ; |vga_display|h_part[3]~26                                                        ; out0             ;
+; |vga_display|h_part[3]~27                                                        ; |vga_display|h_part[3]~27                                                        ; out              ;
+; |vga_display|temp_color[0]~17                                                    ; |vga_display|temp_color[0]~17                                                    ; out              ;
+; |vga_display|temp_color[0]~18                                                    ; |vga_display|temp_color[0]~18                                                    ; out              ;
+; |vga_display|temp_color[0]~19                                                    ; |vga_display|temp_color[0]~19                                                    ; out              ;
+; |vga_display|temp_color[0]~20                                                    ; |vga_display|temp_color[0]~20                                                    ; out              ;
+; |vga_display|temp_color[0]~21                                                    ; |vga_display|temp_color[0]~21                                                    ; out              ;
+; |vga_display|temp_color[0]~22                                                    ; |vga_display|temp_color[0]~22                                                    ; out              ;
+; |vga_display|h_part[2]~28                                                        ; |vga_display|h_part[2]~28                                                        ; out              ;
+; |vga_display|h_part[2]~29                                                        ; |vga_display|h_part[2]~29                                                        ; out              ;
+; |vga_display|h_part[2]~30                                                        ; |vga_display|h_part[2]~30                                                        ; out              ;
+; |vga_display|h_part[2]~31                                                        ; |vga_display|h_part[2]~31                                                        ; out              ;
+; |vga_display|temp_color[0]~23                                                    ; |vga_display|temp_color[0]~23                                                    ; out              ;
+; |vga_display|temp_color[0]~24                                                    ; |vga_display|temp_color[0]~24                                                    ; out              ;
+; |vga_display|h_part[1]~32                                                        ; |vga_display|h_part[1]~32                                                        ; out              ;
+; |vga_display|temp_color[2]~25                                                    ; |vga_display|temp_color[2]~25                                                    ; out              ;
+; |vga_display|temp_color[1]~26                                                    ; |vga_display|temp_color[1]~26                                                    ; out              ;
+; |vga_display|h_part[1]~33                                                        ; |vga_display|h_part[1]~33                                                        ; out              ;
+; |vga_display|h_part[1]~34                                                        ; |vga_display|h_part[1]~34                                                        ; out              ;
+; |vga_display|comb~5                                                              ; |vga_display|comb~5                                                              ; out0             ;
+; |vga_display|temp_color[0]~27                                                    ; |vga_display|temp_color[0]~27                                                    ; out              ;
+; |vga_display|temp_color[0]~28                                                    ; |vga_display|temp_color[0]~28                                                    ; out              ;
+; |vga_display|h_part[0]~35                                                        ; |vga_display|h_part[0]~35                                                        ; out              ;
+; |vga_display|temp_color[1]~29                                                    ; |vga_display|temp_color[1]~29                                                    ; out              ;
+; |vga_display|h_part[0]~36                                                        ; |vga_display|h_part[0]~36                                                        ; out              ;
+; |vga_display|temp_color[1]~30                                                    ; |vga_display|temp_color[1]~30                                                    ; out              ;
+; |vga_display|h_part[0]~37                                                        ; |vga_display|h_part[0]~37                                                        ; out              ;
+; |vga_display|temp_color[1]~31                                                    ; |vga_display|temp_color[1]~31                                                    ; out              ;
+; |vga_display|comb~6                                                              ; |vga_display|comb~6                                                              ; out0             ;
+; |vga_display|temp_color[1]~32                                                    ; |vga_display|temp_color[1]~32                                                    ; out              ;
+; |vga_display|temp_color[0]~33                                                    ; |vga_display|temp_color[0]~33                                                    ; out              ;
+; |vga_display|temp_color[0]~34                                                    ; |vga_display|temp_color[0]~34                                                    ; out              ;
+; |vga_display|temp_color[2]~35                                                    ; |vga_display|temp_color[2]~35                                                    ; out              ;
+; |vga_display|v_part[3]~14                                                        ; |vga_display|v_part[3]~14                                                        ; out              ;
+; |vga_display|temp_color[2]~36                                                    ; |vga_display|temp_color[2]~36                                                    ; out              ;
+; |vga_display|temp_color[1]~37                                                    ; |vga_display|temp_color[1]~37                                                    ; out              ;
+; |vga_display|comb~7                                                              ; |vga_display|comb~7                                                              ; out0             ;
+; |vga_display|h_part[0]~38                                                        ; |vga_display|h_part[0]~38                                                        ; out              ;
+; |vga_display|h_part[0]~39                                                        ; |vga_display|h_part[0]~39                                                        ; out              ;
+; |vga_display|v_part[2]~15                                                        ; |vga_display|v_part[2]~15                                                        ; out              ;
+; |vga_display|v_part[2]~16                                                        ; |vga_display|v_part[2]~16                                                        ; out              ;
+; |vga_display|temp_color[2]~38                                                    ; |vga_display|temp_color[2]~38                                                    ; out              ;
+; |vga_display|temp_color[2]~39                                                    ; |vga_display|temp_color[2]~39                                                    ; out              ;
+; |vga_display|comb~8                                                              ; |vga_display|comb~8                                                              ; out0             ;
+; |vga_display|temp_color[2]~40                                                    ; |vga_display|temp_color[2]~40                                                    ; out              ;
+; |vga_display|v_part[3]~17                                                        ; |vga_display|v_part[3]~17                                                        ; out              ;
+; |vga_display|temp_color[2]~41                                                    ; |vga_display|temp_color[2]~41                                                    ; out              ;
+; |vga_display|temp_color[0]~42                                                    ; |vga_display|temp_color[0]~42                                                    ; out              ;
+; |vga_display|temp_color[0]~43                                                    ; |vga_display|temp_color[0]~43                                                    ; out              ;
+; |vga_display|temp_color[0]~44                                                    ; |vga_display|temp_color[0]~44                                                    ; out              ;
+; |vga_display|temp_color[0]~45                                                    ; |vga_display|temp_color[0]~45                                                    ; out              ;
+; |vga_display|temp_color[0]~46                                                    ; |vga_display|temp_color[0]~46                                                    ; out              ;
+; |vga_display|temp_color[0]~47                                                    ; |vga_display|temp_color[0]~47                                                    ; out              ;
+; |vga_display|temp_color[0]~48                                                    ; |vga_display|temp_color[0]~48                                                    ; out              ;
+; |vga_display|temp_color[0]~49                                                    ; |vga_display|temp_color[0]~49                                                    ; out              ;
+; |vga_display|v_part[1]~18                                                        ; |vga_display|v_part[1]~18                                                        ; out              ;
+; |vga_display|temp_color[2]~50                                                    ; |vga_display|temp_color[2]~50                                                    ; out              ;
+; |vga_display|temp_color[1]~51                                                    ; |vga_display|temp_color[1]~51                                                    ; out              ;
+; |vga_display|v_part[1]~19                                                        ; |vga_display|v_part[1]~19                                                        ; out              ;
+; |vga_display|temp_color[2]~52                                                    ; |vga_display|temp_color[2]~52                                                    ; out              ;
+; |vga_display|temp_color[1]~53                                                    ; |vga_display|temp_color[1]~53                                                    ; out              ;
+; |vga_display|comb~9                                                              ; |vga_display|comb~9                                                              ; out0             ;
+; |vga_display|v_part[2]~20                                                        ; |vga_display|v_part[2]~20                                                        ; out              ;
+; |vga_display|temp_color[0]~54                                                    ; |vga_display|temp_color[0]~54                                                    ; out              ;
+; |vga_display|temp_color[0]~55                                                    ; |vga_display|temp_color[0]~55                                                    ; out              ;
+; |vga_display|temp_color[0]~56                                                    ; |vga_display|temp_color[0]~56                                                    ; out0             ;
+; |vga_display|temp_color[0]~58                                                    ; |vga_display|temp_color[0]~58                                                    ; out              ;
+; |vga_display|temp_color[0]~59                                                    ; |vga_display|temp_color[0]~59                                                    ; out0             ;
+; |vga_display|temp_color[0]~60                                                    ; |vga_display|temp_color[0]~60                                                    ; out              ;
+; |vga_display|temp_color[0]~61                                                    ; |vga_display|temp_color[0]~61                                                    ; out0             ;
+; |vga_display|temp_color[0]~62                                                    ; |vga_display|temp_color[0]~62                                                    ; out              ;
+; |vga_display|temp_color[0]~63                                                    ; |vga_display|temp_color[0]~63                                                    ; out0             ;
+; |vga_display|temp_color[0]~64                                                    ; |vga_display|temp_color[0]~64                                                    ; out              ;
+; |vga_display|temp_color[0]~65                                                    ; |vga_display|temp_color[0]~65                                                    ; out0             ;
+; |vga_display|v_part[0]~21                                                        ; |vga_display|v_part[0]~21                                                        ; out              ;
+; |vga_display|v_part[0]~22                                                        ; |vga_display|v_part[0]~22                                                        ; out0             ;
+; |vga_display|temp_color[2]~66                                                    ; |vga_display|temp_color[2]~66                                                    ; out              ;
+; |vga_display|v_part[0]~23                                                        ; |vga_display|v_part[0]~23                                                        ; out              ;
+; |vga_display|v_part[0]~24                                                        ; |vga_display|v_part[0]~24                                                        ; out0             ;
+; |vga_display|temp_color[2]~68                                                    ; |vga_display|temp_color[2]~68                                                    ; out              ;
+; |vga_display|temp_color[1]~69                                                    ; |vga_display|temp_color[1]~69                                                    ; out              ;
+; |vga_display|v_part[0]~25                                                        ; |vga_display|v_part[0]~25                                                        ; out              ;
+; |vga_display|temp_color[2]~70                                                    ; |vga_display|temp_color[2]~70                                                    ; out              ;
+; |vga_display|temp_color[1]~71                                                    ; |vga_display|temp_color[1]~71                                                    ; out              ;
+; |vga_display|comb~10                                                             ; |vga_display|comb~10                                                             ; out0             ;
+; |vga_display|temp_color[2]~72                                                    ; |vga_display|temp_color[2]~72                                                    ; out              ;
+; |vga_display|temp_color[1]~73                                                    ; |vga_display|temp_color[1]~73                                                    ; out              ;
+; |vga_display|temp_color[0]~74                                                    ; |vga_display|temp_color[0]~74                                                    ; out              ;
+; |vga_display|temp_color[0]~75                                                    ; |vga_display|temp_color[0]~75                                                    ; out0             ;
+; |vga_display|temp_color[0]~76                                                    ; |vga_display|temp_color[0]~76                                                    ; out              ;
+; |vga_display|temp_color[0]~77                                                    ; |vga_display|temp_color[0]~77                                                    ; out0             ;
+; |vga_display|temp_color[0]~78                                                    ; |vga_display|temp_color[0]~78                                                    ; out              ;
+; |vga_display|temp_color[0]~79                                                    ; |vga_display|temp_color[0]~79                                                    ; out0             ;
+; |vga_display|temp_color[0]~80                                                    ; |vga_display|temp_color[0]~80                                                    ; out0             ;
+; |vga_display|v_part[0]~26                                                        ; |vga_display|v_part[0]~26                                                        ; out0             ;
+; |vga_display|v_part[0]~27                                                        ; |vga_display|v_part[0]~27                                                        ; out              ;
+; |vga_display|v_part[0]~28                                                        ; |vga_display|v_part[0]~28                                                        ; out0             ;
+; |vga_display|v_part[0]~29                                                        ; |vga_display|v_part[0]~29                                                        ; out              ;
+; |vga_display|v_part[0]~30                                                        ; |vga_display|v_part[0]~30                                                        ; out0             ;
+; |vga_display|v_part[0]~31                                                        ; |vga_display|v_part[0]~31                                                        ; out              ;
+; |vga_display|v_part[0]~32                                                        ; |vga_display|v_part[0]~32                                                        ; out0             ;
+; |vga_display|v_part[1]~33                                                        ; |vga_display|v_part[1]~33                                                        ; out              ;
+; |vga_display|temp_color[2]~81                                                    ; |vga_display|temp_color[2]~81                                                    ; out              ;
+; |vga_display|temp_color[1]~82                                                    ; |vga_display|temp_color[1]~82                                                    ; out              ;
+; |vga_display|v_part[3]~34                                                        ; |vga_display|v_part[3]~34                                                        ; out              ;
+; |vga_display|temp_color[1]~83                                                    ; |vga_display|temp_color[1]~83                                                    ; out              ;
+; |vga_display|h_part[1]~40                                                        ; |vga_display|h_part[1]~40                                                        ; out              ;
+; |vga_display|temp_color[1]~84                                                    ; |vga_display|temp_color[1]~84                                                    ; out              ;
+; |vga_display|comb~11                                                             ; |vga_display|comb~11                                                             ; out0             ;
+; |vga_display|process_3~2                                                         ; |vga_display|process_3~2                                                         ; out0             ;
+; |vga_display|temp_color[2]                                                       ; |vga_display|temp_color[2]                                                       ; out              ;
+; |vga_display|temp_color[2]~85                                                    ; |vga_display|temp_color[2]~85                                                    ; out              ;
+; |vga_display|temp_color[2]~86                                                    ; |vga_display|temp_color[2]~86                                                    ; out              ;
+; |vga_display|temp_color[2]~87                                                    ; |vga_display|temp_color[2]~87                                                    ; out              ;
+; |vga_display|h_part[3]                                                           ; |vga_display|h_part[3]                                                           ; out              ;
+; |vga_display|comb~12                                                             ; |vga_display|comb~12                                                             ; out0             ;
+; |vga_display|h_part[2]                                                           ; |vga_display|h_part[2]                                                           ; out              ;
+; |vga_display|v_count[3]                                                          ; |vga_display|v_count[3]                                                          ; regout           ;
+; |vga_display|comb~14                                                             ; |vga_display|comb~14                                                             ; out0             ;
+; |vga_display|v_part[0]                                                           ; |vga_display|v_part[0]                                                           ; out              ;
+; |vga_display|v_count[4]                                                          ; |vga_display|v_count[4]                                                          ; regout           ;
+; |vga_display|comb~16                                                             ; |vga_display|comb~16                                                             ; out0             ;
+; |vga_display|v_part[1]                                                           ; |vga_display|v_part[1]                                                           ; out              ;
+; |vga_display|v_count[5]                                                          ; |vga_display|v_count[5]                                                          ; regout           ;
+; |vga_display|comb~18                                                             ; |vga_display|comb~18                                                             ; out0             ;
+; |vga_display|v_part[2]                                                           ; |vga_display|v_part[2]                                                           ; out              ;
+; |vga_display|v_count[6]                                                          ; |vga_display|v_count[6]                                                          ; regout           ;
+; |vga_display|comb~20                                                             ; |vga_display|comb~20                                                             ; out0             ;
+; |vga_display|v_part[3]                                                           ; |vga_display|v_part[3]                                                           ; out              ;
+; |vga_display|v_count[7]                                                          ; |vga_display|v_count[7]                                                          ; regout           ;
+; |vga_display|comb~22                                                             ; |vga_display|comb~22                                                             ; out0             ;
+; |vga_display|h_part[0]                                                           ; |vga_display|h_part[0]                                                           ; out              ;
+; |vga_display|v_count[8]                                                          ; |vga_display|v_count[8]                                                          ; regout           ;
+; |vga_display|comb~24                                                             ; |vga_display|comb~24                                                             ; out0             ;
+; |vga_display|h_part[1]                                                           ; |vga_display|h_part[1]                                                           ; out              ;
+; |vga_display|v_count[9]                                                          ; |vga_display|v_count[9]                                                          ; regout           ;
+; |vga_display|comb~26                                                             ; |vga_display|comb~26                                                             ; out0             ;
+; |vga_display|temp_color[1]                                                       ; |vga_display|temp_color[1]                                                       ; out              ;
+; |vga_display|h_count[0]                                                          ; |vga_display|h_count[0]                                                          ; regout           ;
+; |vga_display|h_count[1]                                                          ; |vga_display|h_count[1]                                                          ; regout           ;
+; |vga_display|h_count[2]                                                          ; |vga_display|h_count[2]                                                          ; regout           ;
+; |vga_display|h_count[3]                                                          ; |vga_display|h_count[3]                                                          ; regout           ;
+; |vga_display|h_count[4]                                                          ; |vga_display|h_count[4]                                                          ; regout           ;
+; |vga_display|vga_r                                                               ; |vga_display|vga_r                                                               ; pin_out          ;
+; |vga_display|vga_g                                                               ; |vga_display|vga_g                                                               ; pin_out          ;
+; |vga_display|vga_b                                                               ; |vga_display|vga_b                                                               ; pin_out          ;
+; |vga_display|h_sync                                                              ; |vga_display|h_sync                                                              ; pin_out          ;
+; |vga_display|v_sync                                                              ; |vga_display|v_sync                                                              ; pin_out          ;
+; |vga_display|clk                                                                 ; |vga_display|clk                                                                 ; out              ;
+; |vga_display|LessThan0~0                                                         ; |vga_display|LessThan0~0                                                         ; out0             ;
+; |vga_display|LessThan0~1                                                         ; |vga_display|LessThan0~1                                                         ; out0             ;
+; |vga_display|LessThan0~2                                                         ; |vga_display|LessThan0~2                                                         ; out0             ;
+; |vga_display|LessThan0~3                                                         ; |vga_display|LessThan0~3                                                         ; out0             ;
+; |vga_display|LessThan0~4                                                         ; |vga_display|LessThan0~4                                                         ; out0             ;
+; |vga_display|LessThan0~5                                                         ; |vga_display|LessThan0~5                                                         ; out0             ;
+; |vga_display|LessThan0~6                                                         ; |vga_display|LessThan0~6                                                         ; out0             ;
+; |vga_display|LessThan1~0                                                         ; |vga_display|LessThan1~0                                                         ; out0             ;
+; |vga_display|LessThan1~1                                                         ; |vga_display|LessThan1~1                                                         ; out0             ;
+; |vga_display|LessThan1~2                                                         ; |vga_display|LessThan1~2                                                         ; out0             ;
+; |vga_display|LessThan2~0                                                         ; |vga_display|LessThan2~0                                                         ; out0             ;
+; |vga_display|LessThan2~1                                                         ; |vga_display|LessThan2~1                                                         ; out0             ;
+; |vga_display|LessThan2~2                                                         ; |vga_display|LessThan2~2                                                         ; out0             ;
+; |vga_display|LessThan3~0                                                         ; |vga_display|LessThan3~0                                                         ; out0             ;
+; |vga_display|LessThan3~1                                                         ; |vga_display|LessThan3~1                                                         ; out0             ;
+; |vga_display|LessThan3~2                                                         ; |vga_display|LessThan3~2                                                         ; out0             ;
+; |vga_display|LessThan3~3                                                         ; |vga_display|LessThan3~3                                                         ; out0             ;
+; |vga_display|LessThan3~4                                                         ; |vga_display|LessThan3~4                                                         ; out0             ;
+; |vga_display|LessThan3~5                                                         ; |vga_display|LessThan3~5                                                         ; out0             ;
+; |vga_display|LessThan3~6                                                         ; |vga_display|LessThan3~6                                                         ; out0             ;
+; |vga_display|LessThan4~0                                                         ; |vga_display|LessThan4~0                                                         ; out0             ;
+; |vga_display|LessThan4~1                                                         ; |vga_display|LessThan4~1                                                         ; out0             ;
+; |vga_display|LessThan4~2                                                         ; |vga_display|LessThan4~2                                                         ; out0             ;
+; |vga_display|LessThan4~3                                                         ; |vga_display|LessThan4~3                                                         ; out0             ;
+; |vga_display|LessThan4~4                                                         ; |vga_display|LessThan4~4                                                         ; out0             ;
+; |vga_display|LessThan5~0                                                         ; |vga_display|LessThan5~0                                                         ; out0             ;
+; |vga_display|LessThan5~1                                                         ; |vga_display|LessThan5~1                                                         ; out0             ;
+; |vga_display|LessThan5~2                                                         ; |vga_display|LessThan5~2                                                         ; out0             ;
+; |vga_display|LessThan5~3                                                         ; |vga_display|LessThan5~3                                                         ; out0             ;
+; |vga_display|LessThan5~4                                                         ; |vga_display|LessThan5~4                                                         ; out0             ;
+; |vga_display|LessThan6~0                                                         ; |vga_display|LessThan6~0                                                         ; out0             ;
+; |vga_display|LessThan6~1                                                         ; |vga_display|LessThan6~1                                                         ; out0             ;
+; |vga_display|LessThan6~2                                                         ; |vga_display|LessThan6~2                                                         ; out0             ;
+; |vga_display|LessThan6~3                                                         ; |vga_display|LessThan6~3                                                         ; out0             ;
+; |vga_display|LessThan7~0                                                         ; |vga_display|LessThan7~0                                                         ; out0             ;
+; |vga_display|LessThan7~1                                                         ; |vga_display|LessThan7~1                                                         ; out0             ;
+; |vga_display|LessThan7~2                                                         ; |vga_display|LessThan7~2                                                         ; out0             ;
+; |vga_display|LessThan7~3                                                         ; |vga_display|LessThan7~3                                                         ; out0             ;
+; |vga_display|LessThan8~0                                                         ; |vga_display|LessThan8~0                                                         ; out0             ;
+; |vga_display|LessThan8~1                                                         ; |vga_display|LessThan8~1                                                         ; out0             ;
+; |vga_display|LessThan9~0                                                         ; |vga_display|LessThan9~0                                                         ; out0             ;
+; |vga_display|LessThan9~1                                                         ; |vga_display|LessThan9~1                                                         ; out0             ;
+; |vga_display|LessThan9~2                                                         ; |vga_display|LessThan9~2                                                         ; out0             ;
+; |vga_display|LessThan9~3                                                         ; |vga_display|LessThan9~3                                                         ; out0             ;
+; |vga_display|LessThan9~4                                                         ; |vga_display|LessThan9~4                                                         ; out0             ;
+; |vga_display|LessThan9~5                                                         ; |vga_display|LessThan9~5                                                         ; out0             ;
+; |vga_display|LessThan9~6                                                         ; |vga_display|LessThan9~6                                                         ; out0             ;
+; |vga_display|LessThan9~7                                                         ; |vga_display|LessThan9~7                                                         ; out0             ;
+; |vga_display|LessThan10~0                                                        ; |vga_display|LessThan10~0                                                        ; out0             ;
+; |vga_display|LessThan10~1                                                        ; |vga_display|LessThan10~1                                                        ; out0             ;
+; |vga_display|LessThan10~2                                                        ; |vga_display|LessThan10~2                                                        ; out0             ;
+; |vga_display|LessThan10~3                                                        ; |vga_display|LessThan10~3                                                        ; out0             ;
+; |vga_display|LessThan11~0                                                        ; |vga_display|LessThan11~0                                                        ; out0             ;
+; |vga_display|LessThan11~1                                                        ; |vga_display|LessThan11~1                                                        ; out0             ;
+; |vga_display|LessThan11~2                                                        ; |vga_display|LessThan11~2                                                        ; out0             ;
+; |vga_display|LessThan12~0                                                        ; |vga_display|LessThan12~0                                                        ; out0             ;
+; |vga_display|LessThan12~1                                                        ; |vga_display|LessThan12~1                                                        ; out0             ;
+; |vga_display|LessThan12~2                                                        ; |vga_display|LessThan12~2                                                        ; out0             ;
+; |vga_display|LessThan12~3                                                        ; |vga_display|LessThan12~3                                                        ; out0             ;
+; |vga_display|LessThan12~4                                                        ; |vga_display|LessThan12~4                                                        ; out0             ;
+; |vga_display|LessThan12~5                                                        ; |vga_display|LessThan12~5                                                        ; out0             ;
+; |vga_display|LessThan13~0                                                        ; |vga_display|LessThan13~0                                                        ; out0             ;
+; |vga_display|LessThan13~1                                                        ; |vga_display|LessThan13~1                                                        ; out0             ;
+; |vga_display|LessThan14~0                                                        ; |vga_display|LessThan14~0                                                        ; out0             ;
+; |vga_display|LessThan14~1                                                        ; |vga_display|LessThan14~1                                                        ; out0             ;
+; |vga_display|LessThan14~2                                                        ; |vga_display|LessThan14~2                                                        ; out0             ;
+; |vga_display|LessThan14~3                                                        ; |vga_display|LessThan14~3                                                        ; out0             ;
+; |vga_display|LessThan15~0                                                        ; |vga_display|LessThan15~0                                                        ; out0             ;
+; |vga_display|LessThan15~1                                                        ; |vga_display|LessThan15~1                                                        ; out0             ;
+; |vga_display|LessThan15~2                                                        ; |vga_display|LessThan15~2                                                        ; out0             ;
+; |vga_display|LessThan15~3                                                        ; |vga_display|LessThan15~3                                                        ; out0             ;
+; |vga_display|LessThan15~4                                                        ; |vga_display|LessThan15~4                                                        ; out0             ;
+; |vga_display|LessThan15~5                                                        ; |vga_display|LessThan15~5                                                        ; out0             ;
+; |vga_display|LessThan16~0                                                        ; |vga_display|LessThan16~0                                                        ; out0             ;
+; |vga_display|LessThan16~1                                                        ; |vga_display|LessThan16~1                                                        ; out0             ;
+; |vga_display|LessThan16~2                                                        ; |vga_display|LessThan16~2                                                        ; out0             ;
+; |vga_display|LessThan16~3                                                        ; |vga_display|LessThan16~3                                                        ; out0             ;
+; |vga_display|LessThan16~4                                                        ; |vga_display|LessThan16~4                                                        ; out0             ;
+; |vga_display|LessThan16~5                                                        ; |vga_display|LessThan16~5                                                        ; out0             ;
+; |vga_display|LessThan17~0                                                        ; |vga_display|LessThan17~0                                                        ; out0             ;
+; |vga_display|LessThan17~1                                                        ; |vga_display|LessThan17~1                                                        ; out0             ;
+; |vga_display|LessThan17~2                                                        ; |vga_display|LessThan17~2                                                        ; out0             ;
+; |vga_display|LessThan17~3                                                        ; |vga_display|LessThan17~3                                                        ; out0             ;
+; |vga_display|LessThan18~0                                                        ; |vga_display|LessThan18~0                                                        ; out0             ;
+; |vga_display|LessThan18~1                                                        ; |vga_display|LessThan18~1                                                        ; out0             ;
+; |vga_display|LessThan18~2                                                        ; |vga_display|LessThan18~2                                                        ; out0             ;
+; |vga_display|LessThan18~3                                                        ; |vga_display|LessThan18~3                                                        ; out0             ;
+; |vga_display|LessThan18~4                                                        ; |vga_display|LessThan18~4                                                        ; out0             ;
+; |vga_display|LessThan20~0                                                        ; |vga_display|LessThan20~0                                                        ; out0             ;
+; |vga_display|LessThan20~1                                                        ; |vga_display|LessThan20~1                                                        ; out0             ;
+; |vga_display|LessThan20~2                                                        ; |vga_display|LessThan20~2                                                        ; out0             ;
+; |vga_display|LessThan20~3                                                        ; |vga_display|LessThan20~3                                                        ; out0             ;
+; |vga_display|LessThan20~4                                                        ; |vga_display|LessThan20~4                                                        ; out0             ;
+; |vga_display|LessThan20~5                                                        ; |vga_display|LessThan20~5                                                        ; out0             ;
+; |vga_display|LessThan20~6                                                        ; |vga_display|LessThan20~6                                                        ; out0             ;
+; |vga_display|LessThan20~7                                                        ; |vga_display|LessThan20~7                                                        ; out0             ;
+; |vga_display|LessThan21~0                                                        ; |vga_display|LessThan21~0                                                        ; out0             ;
+; |vga_display|LessThan21~1                                                        ; |vga_display|LessThan21~1                                                        ; out0             ;
+; |vga_display|LessThan21~2                                                        ; |vga_display|LessThan21~2                                                        ; out0             ;
+; |vga_display|LessThan21~3                                                        ; |vga_display|LessThan21~3                                                        ; out0             ;
+; |vga_display|LessThan21~4                                                        ; |vga_display|LessThan21~4                                                        ; out0             ;
+; |vga_display|LessThan21~5                                                        ; |vga_display|LessThan21~5                                                        ; out0             ;
+; |vga_display|LessThan21~6                                                        ; |vga_display|LessThan21~6                                                        ; out0             ;
+; |vga_display|LessThan21~7                                                        ; |vga_display|LessThan21~7                                                        ; out0             ;
+; |vga_display|LessThan21~8                                                        ; |vga_display|LessThan21~8                                                        ; out0             ;
+; |vga_display|LessThan21~9                                                        ; |vga_display|LessThan21~9                                                        ; out0             ;
+; |vga_display|LessThan22~0                                                        ; |vga_display|LessThan22~0                                                        ; out0             ;
+; |vga_display|LessThan22~1                                                        ; |vga_display|LessThan22~1                                                        ; out0             ;
+; |vga_display|LessThan23~0                                                        ; |vga_display|LessThan23~0                                                        ; out0             ;
+; |vga_display|LessThan23~1                                                        ; |vga_display|LessThan23~1                                                        ; out0             ;
+; |vga_display|LessThan23~2                                                        ; |vga_display|LessThan23~2                                                        ; out0             ;
+; |vga_display|LessThan23~3                                                        ; |vga_display|LessThan23~3                                                        ; out0             ;
+; |vga_display|LessThan23~4                                                        ; |vga_display|LessThan23~4                                                        ; out0             ;
+; |vga_display|LessThan23~5                                                        ; |vga_display|LessThan23~5                                                        ; out0             ;
+; |vga_display|LessThan23~6                                                        ; |vga_display|LessThan23~6                                                        ; out0             ;
+; |vga_display|LessThan23~7                                                        ; |vga_display|LessThan23~7                                                        ; out0             ;
+; |vga_display|LessThan23~8                                                        ; |vga_display|LessThan23~8                                                        ; out0             ;
+; |vga_display|LessThan23~9                                                        ; |vga_display|LessThan23~9                                                        ; out0             ;
+; |vga_display|LessThan23~10                                                       ; |vga_display|LessThan23~10                                                       ; out0             ;
+; |vga_display|LessThan23~11                                                       ; |vga_display|LessThan23~11                                                       ; out0             ;
+; |vga_display|LessThan23~12                                                       ; |vga_display|LessThan23~12                                                       ; out0             ;
+; |vga_display|LessThan23~13                                                       ; |vga_display|LessThan23~13                                                       ; out0             ;
+; |vga_display|LessThan23~14                                                       ; |vga_display|LessThan23~14                                                       ; out0             ;
+; |vga_display|LessThan24~0                                                        ; |vga_display|LessThan24~0                                                        ; out0             ;
+; |vga_display|LessThan24~1                                                        ; |vga_display|LessThan24~1                                                        ; out0             ;
+; |vga_display|LessThan24~2                                                        ; |vga_display|LessThan24~2                                                        ; out0             ;
+; |vga_display|LessThan24~3                                                        ; |vga_display|LessThan24~3                                                        ; out0             ;
+; |vga_display|LessThan24~4                                                        ; |vga_display|LessThan24~4                                                        ; out0             ;
+; |vga_display|LessThan24~5                                                        ; |vga_display|LessThan24~5                                                        ; out0             ;
+; |vga_display|LessThan24~6                                                        ; |vga_display|LessThan24~6                                                        ; out0             ;
+; |vga_display|LessThan24~7                                                        ; |vga_display|LessThan24~7                                                        ; out0             ;
+; |vga_display|LessThan24~8                                                        ; |vga_display|LessThan24~8                                                        ; out0             ;
+; |vga_display|LessThan24~9                                                        ; |vga_display|LessThan24~9                                                        ; out0             ;
+; |vga_display|LessThan24~10                                                       ; |vga_display|LessThan24~10                                                       ; out0             ;
+; |vga_display|LessThan24~11                                                       ; |vga_display|LessThan24~11                                                       ; out0             ;
+; |vga_display|LessThan24~12                                                       ; |vga_display|LessThan24~12                                                       ; out0             ;
+; |vga_display|LessThan24~13                                                       ; |vga_display|LessThan24~13                                                       ; out0             ;
+; |vga_display|LessThan25~0                                                        ; |vga_display|LessThan25~0                                                        ; out0             ;
+; |vga_display|LessThan25~1                                                        ; |vga_display|LessThan25~1                                                        ; out0             ;
+; |vga_display|LessThan25~2                                                        ; |vga_display|LessThan25~2                                                        ; out0             ;
+; |vga_display|LessThan25~3                                                        ; |vga_display|LessThan25~3                                                        ; out0             ;
+; |vga_display|LessThan25~4                                                        ; |vga_display|LessThan25~4                                                        ; out0             ;
+; |vga_display|LessThan25~5                                                        ; |vga_display|LessThan25~5                                                        ; out0             ;
+; |vga_display|LessThan25~6                                                        ; |vga_display|LessThan25~6                                                        ; out0             ;
+; |vga_display|LessThan25~7                                                        ; |vga_display|LessThan25~7                                                        ; out0             ;
+; |vga_display|LessThan25~8                                                        ; |vga_display|LessThan25~8                                                        ; out0             ;
+; |vga_display|LessThan25~9                                                        ; |vga_display|LessThan25~9                                                        ; out0             ;
+; |vga_display|LessThan25~10                                                       ; |vga_display|LessThan25~10                                                       ; out0             ;
+; |vga_display|LessThan25~11                                                       ; |vga_display|LessThan25~11                                                       ; out0             ;
+; |vga_display|LessThan25~12                                                       ; |vga_display|LessThan25~12                                                       ; out0             ;
+; |vga_display|LessThan25~13                                                       ; |vga_display|LessThan25~13                                                       ; out0             ;
+; |vga_display|LessThan25~14                                                       ; |vga_display|LessThan25~14                                                       ; out0             ;
+; |vga_display|LessThan26~0                                                        ; |vga_display|LessThan26~0                                                        ; out0             ;
+; |vga_display|LessThan26~1                                                        ; |vga_display|LessThan26~1                                                        ; out0             ;
+; |vga_display|LessThan26~2                                                        ; |vga_display|LessThan26~2                                                        ; out0             ;
+; |vga_display|LessThan26~3                                                        ; |vga_display|LessThan26~3                                                        ; out0             ;
+; |vga_display|LessThan26~4                                                        ; |vga_display|LessThan26~4                                                        ; out0             ;
+; |vga_display|LessThan26~5                                                        ; |vga_display|LessThan26~5                                                        ; out0             ;
+; |vga_display|LessThan26~6                                                        ; |vga_display|LessThan26~6                                                        ; out0             ;
+; |vga_display|LessThan26~7                                                        ; |vga_display|LessThan26~7                                                        ; out0             ;
+; |vga_display|LessThan27~0                                                        ; |vga_display|LessThan27~0                                                        ; out0             ;
+; |vga_display|LessThan27~1                                                        ; |vga_display|LessThan27~1                                                        ; out0             ;
+; |vga_display|LessThan27~2                                                        ; |vga_display|LessThan27~2                                                        ; out0             ;
+; |vga_display|LessThan27~3                                                        ; |vga_display|LessThan27~3                                                        ; out0             ;
+; |vga_display|LessThan27~4                                                        ; |vga_display|LessThan27~4                                                        ; out0             ;
+; |vga_display|LessThan27~5                                                        ; |vga_display|LessThan27~5                                                        ; out0             ;
+; |vga_display|LessThan27~6                                                        ; |vga_display|LessThan27~6                                                        ; out0             ;
+; |vga_display|LessThan27~7                                                        ; |vga_display|LessThan27~7                                                        ; out0             ;
+; |vga_display|LessThan27~8                                                        ; |vga_display|LessThan27~8                                                        ; out0             ;
+; |vga_display|LessThan28~0                                                        ; |vga_display|LessThan28~0                                                        ; out0             ;
+; |vga_display|LessThan28~1                                                        ; |vga_display|LessThan28~1                                                        ; out0             ;
+; |vga_display|LessThan28~2                                                        ; |vga_display|LessThan28~2                                                        ; out0             ;
+; |vga_display|LessThan28~3                                                        ; |vga_display|LessThan28~3                                                        ; out0             ;
+; |vga_display|LessThan28~4                                                        ; |vga_display|LessThan28~4                                                        ; out0             ;
+; |vga_display|LessThan28~5                                                        ; |vga_display|LessThan28~5                                                        ; out0             ;
+; |vga_display|LessThan28~6                                                        ; |vga_display|LessThan28~6                                                        ; out0             ;
+; |vga_display|LessThan28~7                                                        ; |vga_display|LessThan28~7                                                        ; out0             ;
+; |vga_display|LessThan28~8                                                        ; |vga_display|LessThan28~8                                                        ; out0             ;
+; |vga_display|LessThan28~9                                                        ; |vga_display|LessThan28~9                                                        ; out0             ;
+; |vga_display|LessThan28~10                                                       ; |vga_display|LessThan28~10                                                       ; out0             ;
+; |vga_display|LessThan28~11                                                       ; |vga_display|LessThan28~11                                                       ; out0             ;
+; |vga_display|Equal0~0                                                            ; |vga_display|Equal0~0                                                            ; out0             ;
+; |vga_display|Equal1~0                                                            ; |vga_display|Equal1~0                                                            ; out0             ;
+; |vga_display|Equal2~0                                                            ; |vga_display|Equal2~0                                                            ; out0             ;
+; |vga_display|Equal3~0                                                            ; |vga_display|Equal3~0                                                            ; out0             ;
+; |vga_display|Equal4~0                                                            ; |vga_display|Equal4~0                                                            ; out0             ;
+; |vga_display|Equal5~0                                                            ; |vga_display|Equal5~0                                                            ; out0             ;
+; |vga_display|Equal6~0                                                            ; |vga_display|Equal6~0                                                            ; out0             ;
+; |vga_display|Equal7~0                                                            ; |vga_display|Equal7~0                                                            ; out0             ;
+; |vga_display|Equal8~0                                                            ; |vga_display|Equal8~0                                                            ; out0             ;
+; |vga_display|Equal9~0                                                            ; |vga_display|Equal9~0                                                            ; out0             ;
+; |vga_display|Equal10~0                                                           ; |vga_display|Equal10~0                                                           ; out0             ;
+; |vga_display|Equal11~0                                                           ; |vga_display|Equal11~0                                                           ; out0             ;
+; |vga_display|Equal12~0                                                           ; |vga_display|Equal12~0                                                           ; out0             ;
+; |vga_display|Equal13~0                                                           ; |vga_display|Equal13~0                                                           ; out0             ;
+; |vga_display|Equal14~0                                                           ; |vga_display|Equal14~0                                                           ; out0             ;
+; |vga_display|Equal15~0                                                           ; |vga_display|Equal15~0                                                           ; out0             ;
+; |vga_display|Equal16~0                                                           ; |vga_display|Equal16~0                                                           ; out0             ;
+; |vga_display|Equal18~0                                                           ; |vga_display|Equal18~0                                                           ; out0             ;
+; |vga_display|Equal19~0                                                           ; |vga_display|Equal19~0                                                           ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~4                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~4                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~8                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~8                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|result_node~1                            ; |vga_display|lpm_mux:Mux3|muxlut:$00009|result_node~1                            ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|result_node                              ; |vga_display|lpm_mux:Mux3|muxlut:$00009|result_node                              ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~4                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~4                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~8                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~8                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|result_node~1                            ; |vga_display|lpm_mux:Mux2|muxlut:$00009|result_node~1                            ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|result_node                              ; |vga_display|lpm_mux:Mux2|muxlut:$00009|result_node                              ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~4                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~4                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~4                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~4                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~8                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~8                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|result_node~1                            ; |vga_display|lpm_mux:Mux0|muxlut:$00009|result_node~1                            ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|result_node                              ; |vga_display|lpm_mux:Mux0|muxlut:$00009|result_node                              ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[0]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[0]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[1]~1             ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[1]~1             ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[1]              ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[1]              ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[2]~2             ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[2]~2             ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[2]              ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[2]              ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[3]~3             ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[3]~3             ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[3]              ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[3]              ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[4]~4             ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[4]~4             ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[4]              ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[4]              ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3                  ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3                  ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~0                 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~0                 ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g4~0                ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g4~0                ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[0]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[0]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]~0             ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]~0             ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]~1             ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]~1             ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[1]     ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[1]     ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[2]     ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[2]     ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[3]     ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[3]     ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~1                 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~1                 ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1 ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]   ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]   ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[3]   ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[3]   ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[4]~2 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[4]~2 ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[4]   ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[4]   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|look_add:look_ahead_unit|cout[1]~0                 ; |vga_display|lpm_add_sub:Add0|look_add:look_ahead_unit|cout[1]~0                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[0]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[0]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[1]~1                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[1]~1                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[1]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[1]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[2]~2                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[2]~2                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[2]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[2]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[3]~3                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[3]~3                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[3]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[3]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[4]~4                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[4]~4                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[4]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[4]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[5]~5                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[5]~5                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[5]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[5]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[6]~6                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[6]~6                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[6]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[6]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[7]~7                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[7]~7                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[7]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[7]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g3                                ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g3                                ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~0                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~0                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g4~0                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g4~0                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|p2c[0]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|p2c[0]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|p2c[1]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|p2c[1]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|p2c[2]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|p2c[2]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gc[0]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gc[0]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gc[1]~0                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gc[1]~0                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gc[1]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gc[1]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gc[2]~1                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gc[2]~1                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gc[2]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gc[2]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[0]                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[0]                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[1]                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[1]                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[2]                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[2]                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[3]                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[3]                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~1                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~1                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_result[0]~0                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_result[0]~0                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[1]~0               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[1]~0               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[1]                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[1]                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[2]~1               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[2]~1               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[2]                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[2]                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[3]                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[3]                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[4]~2               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[4]~2               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[4]                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[4]                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]~3               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]~3               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[5]                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]~4               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]~4               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[6]                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]~5               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]~5               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|unreg_res_node[7]                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~16                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~16                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|prop_node[0]~0                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|prop_node[0]~0                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~19                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~19                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~20                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~20                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~21                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~21                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[0]~0                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[0]~0                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~22                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~22                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~23                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~23                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|prop_node[1]~1                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|prop_node[1]~1                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~25                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~25                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~28                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~28                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~29                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~29                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|prop_node[2]~2                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|prop_node[2]~2                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~31                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~31                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~34                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~34                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~35                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~35                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|prop_node[3]~3                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|prop_node[3]~3                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~37                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~37                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~40                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~40                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gp0~0                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gp0~0                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gp0                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gp0                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~41                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~41                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~42                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~42                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|bg_out~0                          ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|bg_out~0                          ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~43                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~43                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~44                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~44                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|bp_out~0                          ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|bp_out~0                          ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|ps[0]~0                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|ps[0]~0                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|psi[0]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|psi[0]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|ps[1]~1                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|ps[1]~1                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|psi[1]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|psi[1]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|pc[0]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|pc[0]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[0]                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|tot_cin_node[0]                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|_~1                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|_~1                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|unreg_result[0]~0                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|unreg_result[0]~0                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]~0               ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]~0               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|unreg_res_node[1]                 ; out0             ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                               ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                        ; Output Port Name                                                                 ; Output Port Type ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |vga_display|process_1~5                                                         ; |vga_display|process_1~5                                                         ; out0             ;
+; |vga_display|mode_count[1]                                                       ; |vga_display|mode_count[1]                                                       ; regout           ;
+; |vga_display|temp_color[1]~67                                                    ; |vga_display|temp_color[1]~67                                                    ; out              ;
+; |vga_display|mode_count[0]                                                       ; |vga_display|mode_count[0]                                                       ; regout           ;
+; |vga_display|clr                                                                 ; |vga_display|clr                                                                 ; out              ;
+; |vga_display|QD                                                                  ; |vga_display|QD                                                                  ; out              ;
+; |vga_display|Equal17~0                                                           ; |vga_display|Equal17~0                                                           ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~0                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~0                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~1                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~1                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~2                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~2                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~3                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~3                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|result_node~0                            ; |vga_display|lpm_mux:Mux3|muxlut:$00009|result_node~0                            ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~5                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~5                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~6                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~6                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~7                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~7                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~0                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~0                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~1                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~1                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~2                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~2                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~3                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~3                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|result_node~0                            ; |vga_display|lpm_mux:Mux2|muxlut:$00009|result_node~0                            ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~5                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~5                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~6                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~6                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~7                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~7                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~0                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~0                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~1                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~1                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~2                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~2                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~3                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~3                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node~0                            ; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node~0                            ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~5                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~5                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~6                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~6                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~7                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~7                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~8                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~8                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node~1                            ; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node~1                            ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node                              ; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node                              ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~0                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~0                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~1                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~1                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~2                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~2                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~3                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~3                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|result_node~0                            ; |vga_display|lpm_mux:Mux0|muxlut:$00009|result_node~0                            ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~5                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~5                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~6                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~6                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~7                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~7                                      ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[1]       ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[0]       ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[0]~0             ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[0]              ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[0]              ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[0]               ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[0]               ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[1]~1             ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[1]~1             ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[1]              ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[1]              ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[1]               ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[1]               ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[0]               ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[0]               ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[0]               ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[0]               ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~1                 ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~1                 ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~2                 ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~2                 ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[4]       ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[4]       ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]       ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]       ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]       ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]       ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]       ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]       ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0             ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]              ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]              ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[4]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[4]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[3]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[3]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                 ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                 ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~4                 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~4                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|look_add:look_ahead_unit|_~0                       ; |vga_display|lpm_add_sub:Add0|look_add:look_ahead_unit|_~0                       ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]~0                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]~0                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[6]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[6]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[5]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[5]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[4]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[4]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[3]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[3]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[2]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[2]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[1]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[1]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[0]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[0]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[0]~0                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[0]~0                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[0]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[0]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[1]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[1]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[2]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[2]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[3]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[3]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[4]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[4]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[5]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[5]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[6]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[6]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[7]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[7]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[0]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[0]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[1]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[1]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[2]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[2]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[3]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[3]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[4]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[4]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[5]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[5]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[6]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[6]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g3~0                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g3~0                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]~0                          ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]~0                          ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]~1                          ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]~1                          ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]~0                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]~0                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]~1                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]~1                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]~2                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]~2                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~2                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~2                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~3                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~3                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~4                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~4                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~5                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~5                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~6                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~6                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~7                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~7                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~17                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~17                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~18                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~18                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~24                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~24                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~26                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~26                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~27                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~27                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[1]~1                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[1]~1                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~30                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~30                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~32                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~32                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~33                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~33                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[2]~2                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[2]~2                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~36                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~36                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~38                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~38                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~39                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~39                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[3]~3                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[3]~3                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]~0                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]~0                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[1]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[1]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[0]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[0]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gn[0]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gn[0]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gn[1]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gn[1]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gc[0]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gc[0]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|_~2                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|_~2                               ; out0             ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                               ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                        ; Output Port Name                                                                 ; Output Port Type ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+; |vga_display|process_1~5                                                         ; |vga_display|process_1~5                                                         ; out0             ;
+; |vga_display|mode_count[1]                                                       ; |vga_display|mode_count[1]                                                       ; regout           ;
+; |vga_display|temp_color[1]~67                                                    ; |vga_display|temp_color[1]~67                                                    ; out              ;
+; |vga_display|mode_count[0]                                                       ; |vga_display|mode_count[0]                                                       ; regout           ;
+; |vga_display|clr                                                                 ; |vga_display|clr                                                                 ; out              ;
+; |vga_display|QD                                                                  ; |vga_display|QD                                                                  ; out              ;
+; |vga_display|Equal17~0                                                           ; |vga_display|Equal17~0                                                           ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~0                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~0                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~1                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~1                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~2                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~2                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~3                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~3                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|result_node~0                            ; |vga_display|lpm_mux:Mux3|muxlut:$00009|result_node~0                            ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~5                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~5                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~6                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~6                                      ; out0             ;
+; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~7                                      ; |vga_display|lpm_mux:Mux3|muxlut:$00009|_~7                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~0                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~0                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~1                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~1                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~2                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~2                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~3                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~3                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|result_node~0                            ; |vga_display|lpm_mux:Mux2|muxlut:$00009|result_node~0                            ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~5                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~5                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~6                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~6                                      ; out0             ;
+; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~7                                      ; |vga_display|lpm_mux:Mux2|muxlut:$00009|_~7                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~0                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~0                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~1                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~1                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~2                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~2                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~3                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~3                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node~0                            ; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node~0                            ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~5                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~5                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~6                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~6                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~7                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~7                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~8                                      ; |vga_display|lpm_mux:Mux1|muxlut:$00009|_~8                                      ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node~1                            ; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node~1                            ; out0             ;
+; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node                              ; |vga_display|lpm_mux:Mux1|muxlut:$00009|result_node                              ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~0                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~0                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~1                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~1                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~2                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~2                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~3                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~3                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|result_node~0                            ; |vga_display|lpm_mux:Mux0|muxlut:$00009|result_node~0                            ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~5                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~5                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~6                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~6                                      ; out0             ;
+; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~7                                      ; |vga_display|lpm_mux:Mux0|muxlut:$00009|_~7                                      ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[1]       ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[0]       ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[0]~0             ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[0]              ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[0]              ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[0]               ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[0]               ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[1]~1             ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[1]~1             ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[1]              ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[1]              ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[1]               ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[1]               ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[0]               ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[0]               ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[0]               ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[0]               ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~1                 ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~1                 ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~2                 ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~2                 ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; out0             ;
+; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; |vga_display|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[4]       ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[4]       ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]       ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]       ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]       ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]       ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]       ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]       ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0             ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]              ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]              ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[4]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[4]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[3]               ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[3]               ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                 ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                 ; out0             ;
+; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~4                 ; |vga_display|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~4                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|look_add:look_ahead_unit|_~0                       ; |vga_display|lpm_add_sub:Add0|look_add:look_ahead_unit|_~0                       ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]~0                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]~0                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[7]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[6]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[6]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[5]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[5]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[4]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[4]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[3]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[3]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[2]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[2]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[1]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[1]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[0]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|datab_node[0]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[0]~0                           ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|ps[0]~0                           ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[0]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|psi[0]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[1]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[1]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[2]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[2]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[3]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[3]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[4]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[4]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[5]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[5]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[6]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[6]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[7]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|gn[7]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[0]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[0]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[1]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[1]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[2]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[2]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[3]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[3]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[4]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[4]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[5]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[5]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[6]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|pc[6]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g3~0                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g3~0                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]~0                          ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]~0                          ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[1]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]~1                          ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]~1                          ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]                            ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|g2c[2]                            ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]~0                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[4]~0                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]~1                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[5]~1                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]~2                 ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|tot_cin_node[6]~2                 ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~2                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~2                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~3                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~3                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~4                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~4                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~5                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~5                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~6                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~6                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~7                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~7                               ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~17                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~17                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~18                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~18                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~24                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~24                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~26                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~26                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~27                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~27                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[1]~1                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[1]~1                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~30                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~30                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~32                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~32                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~33                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~33                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[2]~2                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[2]~2                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~36                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~36                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~38                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~38                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~39                              ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|_~39                              ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[3]~3                    ; |vga_display|lpm_add_sub:Add0|addcore:adder[0]|genr_node[3]~3                    ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]~0                   ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[7]~0                   ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[1]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[1]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[0]                     ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|datab_node[0]                     ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gn[0]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gn[0]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gn[1]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gn[1]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gc[0]                             ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|gc[0]                             ; out0             ;
+; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|_~2                               ; |vga_display|lpm_add_sub:Add0|addcore:adder[1]|_~2                               ; out0             ;
++----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Thu May 25 18:32:07 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off vga_display -c vga_display
+Info: Using vector source file "C:/Users/Administrator/Desktop/VGAÏÂÎç/vga_display.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "VGAB" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "VGAG" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "VGAH" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "VGAR" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "VGAV" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      81.11 %
+Info: Number of transitions in simulation is 9649867
+Info: Quartus II Simulator was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 154 megabytes
+    Info: Processing ended: Thu May 25 18:32:17 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:11
+
+

@@ -1,0 +1,1069 @@
+Simulator report for pill
+Sat Apr 15 22:49:58 2023
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 619 nodes    ;
+; Simulation Coverage         ;      43.30 % ;
+; Total Number of Transitions ; 6676         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; MAX7000S     ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      43.30 % ;
+; Total nodes checked                                 ; 619          ;
+; Total output ports checked                          ; 619          ;
+; Total output ports with complete 1/0-value coverage ; 268          ;
+; Total output ports with no 1/0-value coverage       ; 290          ;
+; Total output ports with no 1-value coverage         ; 321          ;
+; Total output ports with no 0-value coverage         ; 320          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                            ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                ; Output Port Name                                                                         ; Output Port Type ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+; |pill|clk                                                                                ; |pill|clk                                                                                ; out              ;
+; |pill|max[0]                                                                             ; |pill|max[0]                                                                             ; out              ;
+; |pill|max[1]                                                                             ; |pill|max[1]                                                                             ; out              ;
+; |pill|max[4]                                                                             ; |pill|max[4]                                                                             ; out              ;
+; |pill|set                                                                                ; |pill|set                                                                                ; out              ;
+; |pill|led[0]                                                                             ; |pill|led[0]                                                                             ; pin_out          ;
+; |pill|led[1]                                                                             ; |pill|led[1]                                                                             ; pin_out          ;
+; |pill|led[2]                                                                             ; |pill|led[2]                                                                             ; pin_out          ;
+; |pill|led[3]                                                                             ; |pill|led[3]                                                                             ; pin_out          ;
+; |pill|led[4]                                                                             ; |pill|led[4]                                                                             ; pin_out          ;
+; |pill|led[5]                                                                             ; |pill|led[5]                                                                             ; pin_out          ;
+; |pill|led[6]                                                                             ; |pill|led[6]                                                                             ; pin_out          ;
+; |pill|led[7]                                                                             ; |pill|led[7]                                                                             ; pin_out          ;
+; |pill|led[8]                                                                             ; |pill|led[8]                                                                             ; pin_out          ;
+; |pill|led[9]                                                                             ; |pill|led[9]                                                                             ; pin_out          ;
+; |pill|led[10]                                                                            ; |pill|led[10]                                                                            ; pin_out          ;
+; |pill|led[11]                                                                            ; |pill|led[11]                                                                            ; pin_out          ;
+; |pill|led[12]                                                                            ; |pill|led[12]                                                                            ; pin_out          ;
+; |pill|led[13]                                                                            ; |pill|led[13]                                                                            ; pin_out          ;
+; |pill|led[14]                                                                            ; |pill|led[14]                                                                            ; pin_out          ;
+; |pill|led[15]                                                                            ; |pill|led[15]                                                                            ; pin_out          ;
+; |pill|green                                                                              ; |pill|green                                                                              ; pin_out          ;
+; |pill|red                                                                                ; |pill|red                                                                                ; pin_out          ;
+; |pill|display:u5|led[7]                                                                  ; |pill|display:u5|led[7]                                                                  ; out              ;
+; |pill|display:u5|led[6]                                                                  ; |pill|display:u5|led[6]                                                                  ; out              ;
+; |pill|display:u5|led[5]                                                                  ; |pill|display:u5|led[5]                                                                  ; out              ;
+; |pill|display:u5|led[4]                                                                  ; |pill|display:u5|led[4]                                                                  ; out              ;
+; |pill|display:u5|led[3]                                                                  ; |pill|display:u5|led[3]                                                                  ; out              ;
+; |pill|display:u5|led[2]                                                                  ; |pill|display:u5|led[2]                                                                  ; out              ;
+; |pill|display:u5|led[1]                                                                  ; |pill|display:u5|led[1]                                                                  ; out              ;
+; |pill|display:u5|led[0]                                                                  ; |pill|display:u5|led[0]                                                                  ; out              ;
+; |pill|per_bottle:u4|max_value[0]                                                         ; |pill|per_bottle:u4|max_value[0]                                                         ; out              ;
+; |pill|per_bottle:u4|led[7]                                                               ; |pill|per_bottle:u4|led[7]                                                               ; out              ;
+; |pill|per_bottle:u4|led[7]~1                                                             ; |pill|per_bottle:u4|led[7]~1                                                             ; out0             ;
+; |pill|per_bottle:u4|led[6]                                                               ; |pill|per_bottle:u4|led[6]                                                               ; out              ;
+; |pill|per_bottle:u4|led[6]~5                                                             ; |pill|per_bottle:u4|led[6]~5                                                             ; out              ;
+; |pill|per_bottle:u4|led[5]                                                               ; |pill|per_bottle:u4|led[5]                                                               ; out              ;
+; |pill|per_bottle:u4|pills_h~5                                                            ; |pill|per_bottle:u4|pills_h~5                                                            ; out              ;
+; |pill|per_bottle:u4|pills_h~6                                                            ; |pill|per_bottle:u4|pills_h~6                                                            ; out              ;
+; |pill|per_bottle:u4|pills_h~7                                                            ; |pill|per_bottle:u4|pills_h~7                                                            ; out              ;
+; |pill|per_bottle:u4|pills_h~9                                                            ; |pill|per_bottle:u4|pills_h~9                                                            ; out              ;
+; |pill|per_bottle:u4|pills_h~10                                                           ; |pill|per_bottle:u4|pills_h~10                                                           ; out              ;
+; |pill|per_bottle:u4|pills_h~11                                                           ; |pill|per_bottle:u4|pills_h~11                                                           ; out              ;
+; |pill|per_bottle:u4|pills_l~4                                                            ; |pill|per_bottle:u4|pills_l~4                                                            ; out              ;
+; |pill|per_bottle:u4|pills_l~5                                                            ; |pill|per_bottle:u4|pills_l~5                                                            ; out              ;
+; |pill|per_bottle:u4|pills_l~6                                                            ; |pill|per_bottle:u4|pills_l~6                                                            ; out              ;
+; |pill|per_bottle:u4|pills_l~7                                                            ; |pill|per_bottle:u4|pills_l~7                                                            ; out              ;
+; |pill|per_bottle:u4|pills_l~8                                                            ; |pill|per_bottle:u4|pills_l~8                                                            ; out              ;
+; |pill|per_bottle:u4|pills_l~9                                                            ; |pill|per_bottle:u4|pills_l~9                                                            ; out              ;
+; |pill|per_bottle:u4|pills_l~10                                                           ; |pill|per_bottle:u4|pills_l~10                                                           ; out              ;
+; |pill|per_bottle:u4|pills_l~11                                                           ; |pill|per_bottle:u4|pills_l~11                                                           ; out              ;
+; |pill|per_bottle:u4|pills_h[2]                                                           ; |pill|per_bottle:u4|pills_h[2]                                                           ; regout           ;
+; |pill|per_bottle:u4|pills_h[1]                                                           ; |pill|per_bottle:u4|pills_h[1]                                                           ; regout           ;
+; |pill|per_bottle:u4|pills_h[0]                                                           ; |pill|per_bottle:u4|pills_h[0]                                                           ; regout           ;
+; |pill|per_bottle:u4|pills_l[3]                                                           ; |pill|per_bottle:u4|pills_l[3]                                                           ; regout           ;
+; |pill|per_bottle:u4|pills_l[2]                                                           ; |pill|per_bottle:u4|pills_l[2]                                                           ; regout           ;
+; |pill|per_bottle:u4|pills_l[1]                                                           ; |pill|per_bottle:u4|pills_l[1]                                                           ; regout           ;
+; |pill|per_bottle:u4|led[5]~7                                                             ; |pill|per_bottle:u4|led[5]~7                                                             ; out              ;
+; |pill|per_bottle:u4|led[4]                                                               ; |pill|per_bottle:u4|led[4]                                                               ; out              ;
+; |pill|per_bottle:u4|led[4]~9                                                             ; |pill|per_bottle:u4|led[4]~9                                                             ; out              ;
+; |pill|per_bottle:u4|pills_l[0]                                                           ; |pill|per_bottle:u4|pills_l[0]                                                           ; regout           ;
+; |pill|per_bottle:u4|led~11                                                               ; |pill|per_bottle:u4|led~11                                                               ; out              ;
+; |pill|per_bottle:u4|led~12                                                               ; |pill|per_bottle:u4|led~12                                                               ; out              ;
+; |pill|per_bottle:u4|led~13                                                               ; |pill|per_bottle:u4|led~13                                                               ; out              ;
+; |pill|per_bottle:u4|led~14                                                               ; |pill|per_bottle:u4|led~14                                                               ; out              ;
+; |pill|per_bottle:u4|led~15                                                               ; |pill|per_bottle:u4|led~15                                                               ; out              ;
+; |pill|per_bottle:u4|led~16                                                               ; |pill|per_bottle:u4|led~16                                                               ; out              ;
+; |pill|per_bottle:u4|led~17                                                               ; |pill|per_bottle:u4|led~17                                                               ; out              ;
+; |pill|per_bottle:u4|led~19                                                               ; |pill|per_bottle:u4|led~19                                                               ; out0             ;
+; |pill|per_bottle:u4|led~20                                                               ; |pill|per_bottle:u4|led~20                                                               ; out              ;
+; |pill|per_bottle:u4|led~21                                                               ; |pill|per_bottle:u4|led~21                                                               ; out              ;
+; |pill|per_bottle:u4|led~22                                                               ; |pill|per_bottle:u4|led~22                                                               ; out              ;
+; |pill|per_bottle:u4|led~23                                                               ; |pill|per_bottle:u4|led~23                                                               ; out              ;
+; |pill|per_bottle:u4|led~25                                                               ; |pill|per_bottle:u4|led~25                                                               ; out0             ;
+; |pill|per_bottle:u4|led~26                                                               ; |pill|per_bottle:u4|led~26                                                               ; out0             ;
+; |pill|per_bottle:u4|led~27                                                               ; |pill|per_bottle:u4|led~27                                                               ; out0             ;
+; |pill|per_bottle:u4|led[3]                                                               ; |pill|per_bottle:u4|led[3]                                                               ; out              ;
+; |pill|per_bottle:u4|led[2]                                                               ; |pill|per_bottle:u4|led[2]                                                               ; out              ;
+; |pill|per_bottle:u4|led[1]                                                               ; |pill|per_bottle:u4|led[1]                                                               ; out              ;
+; |pill|per_bottle:u4|led[0]                                                               ; |pill|per_bottle:u4|led[0]                                                               ; out              ;
+; |pill|per_bottle:u4|max_value[4]                                                         ; |pill|per_bottle:u4|max_value[4]                                                         ; out              ;
+; |pill|per_bottle:u4|pills_l[0]~0                                                         ; |pill|per_bottle:u4|pills_l[0]~0                                                         ; out              ;
+; |pill|per_bottle:u4|pills_l[1]~1                                                         ; |pill|per_bottle:u4|pills_l[1]~1                                                         ; out              ;
+; |pill|per_bottle:u4|pills_l[2]~2                                                         ; |pill|per_bottle:u4|pills_l[2]~2                                                         ; out              ;
+; |pill|per_bottle:u4|pills_l[3]~3                                                         ; |pill|per_bottle:u4|pills_l[3]~3                                                         ; out              ;
+; |pill|per_bottle:u4|pills_h[0]~0                                                         ; |pill|per_bottle:u4|pills_h[0]~0                                                         ; out              ;
+; |pill|per_bottle:u4|pills_h[1]~1                                                         ; |pill|per_bottle:u4|pills_h[1]~1                                                         ; out              ;
+; |pill|per_bottle:u4|pills_h[2]~2                                                         ; |pill|per_bottle:u4|pills_h[2]~2                                                         ; out              ;
+; |pill|per_bottle:u3|max_value[1]                                                         ; |pill|per_bottle:u3|max_value[1]                                                         ; out              ;
+; |pill|per_bottle:u3|max_value[0]                                                         ; |pill|per_bottle:u3|max_value[0]                                                         ; out              ;
+; |pill|per_bottle:u3|led[7]~1                                                             ; |pill|per_bottle:u3|led[7]~1                                                             ; out0             ;
+; |pill|per_bottle:u3|pills_l~7                                                            ; |pill|per_bottle:u3|pills_l~7                                                            ; out              ;
+; |pill|per_bottle:u3|pills_l~11                                                           ; |pill|per_bottle:u3|pills_l~11                                                           ; out              ;
+; |pill|per_bottle:u3|led[4]                                                               ; |pill|per_bottle:u3|led[4]                                                               ; out              ;
+; |pill|per_bottle:u3|led[4]~9                                                             ; |pill|per_bottle:u3|led[4]~9                                                             ; out              ;
+; |pill|per_bottle:u3|pills_l[0]                                                           ; |pill|per_bottle:u3|pills_l[0]                                                           ; regout           ;
+; |pill|per_bottle:u3|led~13                                                               ; |pill|per_bottle:u3|led~13                                                               ; out              ;
+; |pill|per_bottle:u3|led~16                                                               ; |pill|per_bottle:u3|led~16                                                               ; out              ;
+; |pill|per_bottle:u3|led~17                                                               ; |pill|per_bottle:u3|led~17                                                               ; out              ;
+; |pill|per_bottle:u3|led~19                                                               ; |pill|per_bottle:u3|led~19                                                               ; out0             ;
+; |pill|per_bottle:u3|led~20                                                               ; |pill|per_bottle:u3|led~20                                                               ; out              ;
+; |pill|per_bottle:u3|led~21                                                               ; |pill|per_bottle:u3|led~21                                                               ; out              ;
+; |pill|per_bottle:u3|led~22                                                               ; |pill|per_bottle:u3|led~22                                                               ; out              ;
+; |pill|per_bottle:u3|led~23                                                               ; |pill|per_bottle:u3|led~23                                                               ; out              ;
+; |pill|per_bottle:u3|led~25                                                               ; |pill|per_bottle:u3|led~25                                                               ; out0             ;
+; |pill|per_bottle:u3|led~26                                                               ; |pill|per_bottle:u3|led~26                                                               ; out0             ;
+; |pill|per_bottle:u3|led~27                                                               ; |pill|per_bottle:u3|led~27                                                               ; out0             ;
+; |pill|per_bottle:u3|led[3]                                                               ; |pill|per_bottle:u3|led[3]                                                               ; out              ;
+; |pill|per_bottle:u3|led[2]                                                               ; |pill|per_bottle:u3|led[2]                                                               ; out              ;
+; |pill|per_bottle:u3|led[1]                                                               ; |pill|per_bottle:u3|led[1]                                                               ; out              ;
+; |pill|per_bottle:u3|led[0]                                                               ; |pill|per_bottle:u3|led[0]                                                               ; out              ;
+; |pill|per_bottle:u3|max_value[4]                                                         ; |pill|per_bottle:u3|max_value[4]                                                         ; out              ;
+; |pill|per_bottle:u3|pills_l[0]~0                                                         ; |pill|per_bottle:u3|pills_l[0]~0                                                         ; out              ;
+; |pill|total_pills:u2|ten~5                                                               ; |pill|total_pills:u2|ten~5                                                               ; out              ;
+; |pill|total_pills:u2|ten~6                                                               ; |pill|total_pills:u2|ten~6                                                               ; out              ;
+; |pill|total_pills:u2|ten~7                                                               ; |pill|total_pills:u2|ten~7                                                               ; out              ;
+; |pill|total_pills:u2|ten~8                                                               ; |pill|total_pills:u2|ten~8                                                               ; out              ;
+; |pill|total_pills:u2|ten~9                                                               ; |pill|total_pills:u2|ten~9                                                               ; out              ;
+; |pill|total_pills:u2|ten~10                                                              ; |pill|total_pills:u2|ten~10                                                              ; out              ;
+; |pill|total_pills:u2|ten~11                                                              ; |pill|total_pills:u2|ten~11                                                              ; out              ;
+; |pill|total_pills:u2|one~4                                                               ; |pill|total_pills:u2|one~4                                                               ; out              ;
+; |pill|total_pills:u2|one~5                                                               ; |pill|total_pills:u2|one~5                                                               ; out              ;
+; |pill|total_pills:u2|one~6                                                               ; |pill|total_pills:u2|one~6                                                               ; out              ;
+; |pill|total_pills:u2|one~7                                                               ; |pill|total_pills:u2|one~7                                                               ; out              ;
+; |pill|total_pills:u2|ten~13                                                              ; |pill|total_pills:u2|ten~13                                                              ; out              ;
+; |pill|total_pills:u2|ten~14                                                              ; |pill|total_pills:u2|ten~14                                                              ; out              ;
+; |pill|total_pills:u2|ten~15                                                              ; |pill|total_pills:u2|ten~15                                                              ; out              ;
+; |pill|total_pills:u2|one[3]                                                              ; |pill|total_pills:u2|one[3]                                                              ; regout           ;
+; |pill|total_pills:u2|one[2]                                                              ; |pill|total_pills:u2|one[2]                                                              ; regout           ;
+; |pill|total_pills:u2|one[1]                                                              ; |pill|total_pills:u2|one[1]                                                              ; regout           ;
+; |pill|total_pills:u2|one[0]                                                              ; |pill|total_pills:u2|one[0]                                                              ; regout           ;
+; |pill|total_pills:u2|ten[2]                                                              ; |pill|total_pills:u2|ten[2]                                                              ; regout           ;
+; |pill|total_pills:u2|ten[1]                                                              ; |pill|total_pills:u2|ten[1]                                                              ; regout           ;
+; |pill|total_pills:u2|ten[0]                                                              ; |pill|total_pills:u2|ten[0]                                                              ; regout           ;
+; |pill|total_pills:u2|ten[0]~0                                                            ; |pill|total_pills:u2|ten[0]~0                                                            ; out              ;
+; |pill|total_pills:u2|ten[1]~1                                                            ; |pill|total_pills:u2|ten[1]~1                                                            ; out              ;
+; |pill|total_pills:u2|ten[2]~2                                                            ; |pill|total_pills:u2|ten[2]~2                                                            ; out              ;
+; |pill|total_pills:u2|one[0]~0                                                            ; |pill|total_pills:u2|one[0]~0                                                            ; out              ;
+; |pill|total_pills:u2|one[1]~1                                                            ; |pill|total_pills:u2|one[1]~1                                                            ; out              ;
+; |pill|total_pills:u2|one[2]~2                                                            ; |pill|total_pills:u2|one[2]~2                                                            ; out              ;
+; |pill|total_pills:u2|one[3]~3                                                            ; |pill|total_pills:u2|one[3]~3                                                            ; out              ;
+; |pill|control:u1|en~1                                                                    ; |pill|control:u1|en~1                                                                    ; out0             ;
+; |pill|control:u1|process_1~1                                                             ; |pill|control:u1|process_1~1                                                             ; out0             ;
+; |pill|control:u1|green~0                                                                 ; |pill|control:u1|green~0                                                                 ; out              ;
+; |pill|control:u1|green                                                                   ; |pill|control:u1|green                                                                   ; out              ;
+; |pill|control:u1|red                                                                     ; |pill|control:u1|red                                                                     ; out              ;
+; |pill|per_bottle:u4|LessThan1~0                                                          ; |pill|per_bottle:u4|LessThan1~0                                                          ; out0             ;
+; |pill|per_bottle:u4|LessThan1~1                                                          ; |pill|per_bottle:u4|LessThan1~1                                                          ; out0             ;
+; |pill|per_bottle:u4|LessThan1~2                                                          ; |pill|per_bottle:u4|LessThan1~2                                                          ; out0             ;
+; |pill|per_bottle:u4|LessThan1~3                                                          ; |pill|per_bottle:u4|LessThan1~3                                                          ; out0             ;
+; |pill|per_bottle:u4|LessThan1~4                                                          ; |pill|per_bottle:u4|LessThan1~4                                                          ; out0             ;
+; |pill|per_bottle:u4|LessThan1~5                                                          ; |pill|per_bottle:u4|LessThan1~5                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan1~0                                                          ; |pill|per_bottle:u3|LessThan1~0                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan1~1                                                          ; |pill|per_bottle:u3|LessThan1~1                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan1~2                                                          ; |pill|per_bottle:u3|LessThan1~2                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan1~3                                                          ; |pill|per_bottle:u3|LessThan1~3                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan1~4                                                          ; |pill|per_bottle:u3|LessThan1~4                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan1~5                                                          ; |pill|per_bottle:u3|LessThan1~5                                                          ; out0             ;
+; |pill|per_bottle:u4|Equal0~0                                                             ; |pill|per_bottle:u4|Equal0~0                                                             ; out0             ;
+; |pill|per_bottle:u4|Equal1~0                                                             ; |pill|per_bottle:u4|Equal1~0                                                             ; out0             ;
+; |pill|per_bottle:u4|Equal1~1                                                             ; |pill|per_bottle:u4|Equal1~1                                                             ; out0             ;
+; |pill|per_bottle:u4|Equal1~2                                                             ; |pill|per_bottle:u4|Equal1~2                                                             ; out0             ;
+; |pill|per_bottle:u4|Equal1~3                                                             ; |pill|per_bottle:u4|Equal1~3                                                             ; out0             ;
+; |pill|per_bottle:u4|Equal1~4                                                             ; |pill|per_bottle:u4|Equal1~4                                                             ; out0             ;
+; |pill|per_bottle:u4|Equal1~5                                                             ; |pill|per_bottle:u4|Equal1~5                                                             ; out0             ;
+; |pill|per_bottle:u4|Equal1~6                                                             ; |pill|per_bottle:u4|Equal1~6                                                             ; out0             ;
+; |pill|per_bottle:u4|Equal1~8                                                             ; |pill|per_bottle:u4|Equal1~8                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~0                                                             ; |pill|per_bottle:u3|Equal1~0                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~1                                                             ; |pill|per_bottle:u3|Equal1~1                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~4                                                             ; |pill|per_bottle:u3|Equal1~4                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~8                                                             ; |pill|per_bottle:u3|Equal1~8                                                             ; out0             ;
+; |pill|total_pills:u2|Equal2~0                                                            ; |pill|total_pills:u2|Equal2~0                                                            ; out0             ;
+; |pill|total_pills:u2|Equal3~0                                                            ; |pill|total_pills:u2|Equal3~0                                                            ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~5                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~5                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~6                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~6                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|result_node~1                                ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|result_node~1                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|result_node                                  ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|result_node                                  ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[0]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[1]~1             ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[1]~1             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[1]              ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[1]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[2]~2             ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[2]~2             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[2]              ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[2]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[3]~3             ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[3]~3             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[3]              ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[3]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|g3                  ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|g3                  ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[0]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[1]~0             ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[1]~0             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[1]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[2]~1             ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[2]~1             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[2]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gc[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|tot_cin_node[1]     ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|tot_cin_node[1]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|tot_cin_node[2]     ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|tot_cin_node[2]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~1                 ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~1                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1 ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[2]   ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[2]   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[3]   ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|unreg_res_node[3]   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[0]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[1]~1             ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[1]~1             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[1]              ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[1]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[2]~2             ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[2]~2             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[2]              ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[2]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[0]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]~0             ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]~0             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]~1             ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]~1             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[1]     ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[1]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[2]     ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[2]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~1                 ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~1                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1 ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]   ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[3]   ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[3]   ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[0]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[0]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[0]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[0]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[0]      ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[0]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~1                  ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~1                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_result[0]~0    ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_result[0]~0    ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[0]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[0]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[1]~1              ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[1]~1              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[1]               ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[1]               ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[2]~2              ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[2]~2              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[2]               ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[2]               ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[3]~3              ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[3]~3              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[3]               ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[3]               ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3                   ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3                   ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[0]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[0]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]~0              ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]~0              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]~1              ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]~1              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[0]      ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[0]      ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~1                  ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~1                  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_result[0]~0    ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_result[0]~0    ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0  ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]    ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]    ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[0]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[0]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[1]~1              ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[1]~1              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[1]               ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[1]               ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[2]~2              ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[2]~2              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[2]               ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[2]               ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[0]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[0]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]~0              ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]~0              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]~1              ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]~1              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[0]      ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[0]      ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~1                  ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~1                  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_result[0]~0    ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_result[0]~0    ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0  ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]    ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]    ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; out0             ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                               ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                ; Output Port Name                                                                         ; Output Port Type ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+; |pill|comb~0                                                                             ; |pill|comb~0                                                                             ; out0             ;
+; |pill|clr                                                                                ; |pill|clr                                                                                ; out              ;
+; |pill|mode[1]                                                                            ; |pill|mode[1]                                                                            ; out              ;
+; |pill|max[2]                                                                             ; |pill|max[2]                                                                             ; out              ;
+; |pill|max[3]                                                                             ; |pill|max[3]                                                                             ; out              ;
+; |pill|max[5]                                                                             ; |pill|max[5]                                                                             ; out              ;
+; |pill|max[6]                                                                             ; |pill|max[6]                                                                             ; out              ;
+; |pill|max[7]                                                                             ; |pill|max[7]                                                                             ; out              ;
+; |pill|led[16]                                                                            ; |pill|led[16]                                                                            ; pin_out          ;
+; |pill|led[17]                                                                            ; |pill|led[17]                                                                            ; pin_out          ;
+; |pill|led[18]                                                                            ; |pill|led[18]                                                                            ; pin_out          ;
+; |pill|led[19]                                                                            ; |pill|led[19]                                                                            ; pin_out          ;
+; |pill|display:u5|led[8]                                                                  ; |pill|display:u5|led[8]                                                                  ; out              ;
+; |pill|display:u5|led[9]                                                                  ; |pill|display:u5|led[9]                                                                  ; out              ;
+; |pill|display:u5|led[10]                                                                 ; |pill|display:u5|led[10]                                                                 ; out              ;
+; |pill|display:u5|led[11]                                                                 ; |pill|display:u5|led[11]                                                                 ; out              ;
+; |pill|per_bottle:u4|max_value[1]                                                         ; |pill|per_bottle:u4|max_value[1]                                                         ; out              ;
+; |pill|per_bottle:u4|process_3~0                                                          ; |pill|per_bottle:u4|process_3~0                                                          ; out0             ;
+; |pill|per_bottle:u4|illegal                                                              ; |pill|per_bottle:u4|illegal                                                              ; out0             ;
+; |pill|per_bottle:u4|max_value[3]                                                         ; |pill|per_bottle:u4|max_value[3]                                                         ; out              ;
+; |pill|per_bottle:u4|max_value[5]                                                         ; |pill|per_bottle:u4|max_value[5]                                                         ; out              ;
+; |pill|per_bottle:u4|max_value[6]                                                         ; |pill|per_bottle:u4|max_value[6]                                                         ; out              ;
+; |pill|per_bottle:u4|max_value[7]                                                         ; |pill|per_bottle:u4|max_value[7]                                                         ; out              ;
+; |pill|per_bottle:u4|max_value[2]                                                         ; |pill|per_bottle:u4|max_value[2]                                                         ; out              ;
+; |pill|per_bottle:u3|led[7]                                                               ; |pill|per_bottle:u3|led[7]                                                               ; out              ;
+; |pill|per_bottle:u3|led[7]~2                                                             ; |pill|per_bottle:u3|led[7]~2                                                             ; out              ;
+; |pill|per_bottle:u3|led[6]                                                               ; |pill|per_bottle:u3|led[6]                                                               ; out              ;
+; |pill|per_bottle:u3|led[6]~5                                                             ; |pill|per_bottle:u3|led[6]~5                                                             ; out              ;
+; |pill|per_bottle:u3|led[5]                                                               ; |pill|per_bottle:u3|led[5]                                                               ; out              ;
+; |pill|per_bottle:u3|pills_h~4                                                            ; |pill|per_bottle:u3|pills_h~4                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~5                                                            ; |pill|per_bottle:u3|pills_h~5                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~6                                                            ; |pill|per_bottle:u3|pills_h~6                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~7                                                            ; |pill|per_bottle:u3|pills_h~7                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~8                                                            ; |pill|per_bottle:u3|pills_h~8                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~9                                                            ; |pill|per_bottle:u3|pills_h~9                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~10                                                           ; |pill|per_bottle:u3|pills_h~10                                                           ; out              ;
+; |pill|per_bottle:u3|pills_h~11                                                           ; |pill|per_bottle:u3|pills_h~11                                                           ; out              ;
+; |pill|per_bottle:u3|pills_l~4                                                            ; |pill|per_bottle:u3|pills_l~4                                                            ; out              ;
+; |pill|per_bottle:u3|pills_l~5                                                            ; |pill|per_bottle:u3|pills_l~5                                                            ; out              ;
+; |pill|per_bottle:u3|pills_l~8                                                            ; |pill|per_bottle:u3|pills_l~8                                                            ; out              ;
+; |pill|per_bottle:u3|pills_l~9                                                            ; |pill|per_bottle:u3|pills_l~9                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h[3]                                                           ; |pill|per_bottle:u3|pills_h[3]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_h[2]                                                           ; |pill|per_bottle:u3|pills_h[2]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_h[1]                                                           ; |pill|per_bottle:u3|pills_h[1]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_h[0]                                                           ; |pill|per_bottle:u3|pills_h[0]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_l[3]                                                           ; |pill|per_bottle:u3|pills_l[3]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_l[2]                                                           ; |pill|per_bottle:u3|pills_l[2]                                                           ; regout           ;
+; |pill|per_bottle:u3|led[5]~7                                                             ; |pill|per_bottle:u3|led[5]~7                                                             ; out              ;
+; |pill|per_bottle:u3|process_3~0                                                          ; |pill|per_bottle:u3|process_3~0                                                          ; out0             ;
+; |pill|per_bottle:u3|illegal                                                              ; |pill|per_bottle:u3|illegal                                                              ; out0             ;
+; |pill|per_bottle:u3|led~10                                                               ; |pill|per_bottle:u3|led~10                                                               ; out              ;
+; |pill|per_bottle:u3|led~11                                                               ; |pill|per_bottle:u3|led~11                                                               ; out              ;
+; |pill|per_bottle:u3|led~12                                                               ; |pill|per_bottle:u3|led~12                                                               ; out              ;
+; |pill|per_bottle:u3|led~14                                                               ; |pill|per_bottle:u3|led~14                                                               ; out              ;
+; |pill|per_bottle:u3|led~15                                                               ; |pill|per_bottle:u3|led~15                                                               ; out              ;
+; |pill|per_bottle:u3|max_value[3]                                                         ; |pill|per_bottle:u3|max_value[3]                                                         ; out              ;
+; |pill|per_bottle:u3|max_value[5]                                                         ; |pill|per_bottle:u3|max_value[5]                                                         ; out              ;
+; |pill|per_bottle:u3|max_value[6]                                                         ; |pill|per_bottle:u3|max_value[6]                                                         ; out              ;
+; |pill|per_bottle:u3|max_value[7]                                                         ; |pill|per_bottle:u3|max_value[7]                                                         ; out              ;
+; |pill|per_bottle:u3|pills_l[2]~2                                                         ; |pill|per_bottle:u3|pills_l[2]~2                                                         ; out              ;
+; |pill|per_bottle:u3|pills_l[3]~3                                                         ; |pill|per_bottle:u3|pills_l[3]~3                                                         ; out              ;
+; |pill|per_bottle:u3|pills_h[0]~0                                                         ; |pill|per_bottle:u3|pills_h[0]~0                                                         ; out              ;
+; |pill|per_bottle:u3|pills_h[1]~1                                                         ; |pill|per_bottle:u3|pills_h[1]~1                                                         ; out              ;
+; |pill|per_bottle:u3|pills_h[2]~2                                                         ; |pill|per_bottle:u3|pills_h[2]~2                                                         ; out              ;
+; |pill|per_bottle:u3|pills_h[3]~3                                                         ; |pill|per_bottle:u3|pills_h[3]~3                                                         ; out              ;
+; |pill|per_bottle:u3|max_value[2]                                                         ; |pill|per_bottle:u3|max_value[2]                                                         ; out              ;
+; |pill|total_pills:u2|process_0~0                                                         ; |pill|total_pills:u2|process_0~0                                                         ; out0             ;
+; |pill|total_pills:u2|process_0~1                                                         ; |pill|total_pills:u2|process_0~1                                                         ; out0             ;
+; |pill|total_pills:u2|hun[0]~0                                                            ; |pill|total_pills:u2|hun[0]~0                                                            ; out              ;
+; |pill|total_pills:u2|hun~4                                                               ; |pill|total_pills:u2|hun~4                                                               ; out              ;
+; |pill|total_pills:u2|hun~5                                                               ; |pill|total_pills:u2|hun~5                                                               ; out              ;
+; |pill|total_pills:u2|hun~6                                                               ; |pill|total_pills:u2|hun~6                                                               ; out              ;
+; |pill|total_pills:u2|hun~7                                                               ; |pill|total_pills:u2|hun~7                                                               ; out              ;
+; |pill|total_pills:u2|hun[0]                                                              ; |pill|total_pills:u2|hun[0]                                                              ; regout           ;
+; |pill|total_pills:u2|hun~8                                                               ; |pill|total_pills:u2|hun~8                                                               ; out              ;
+; |pill|total_pills:u2|hun~9                                                               ; |pill|total_pills:u2|hun~9                                                               ; out              ;
+; |pill|total_pills:u2|hun~10                                                              ; |pill|total_pills:u2|hun~10                                                              ; out              ;
+; |pill|total_pills:u2|hun~12                                                              ; |pill|total_pills:u2|hun~12                                                              ; out              ;
+; |pill|total_pills:u2|hun~13                                                              ; |pill|total_pills:u2|hun~13                                                              ; out              ;
+; |pill|total_pills:u2|hun~14                                                              ; |pill|total_pills:u2|hun~14                                                              ; out              ;
+; |pill|total_pills:u2|hun~15                                                              ; |pill|total_pills:u2|hun~15                                                              ; out              ;
+; |pill|total_pills:u2|hun[3]                                                              ; |pill|total_pills:u2|hun[3]                                                              ; regout           ;
+; |pill|total_pills:u2|hun[2]                                                              ; |pill|total_pills:u2|hun[2]                                                              ; regout           ;
+; |pill|total_pills:u2|hun[1]                                                              ; |pill|total_pills:u2|hun[1]                                                              ; regout           ;
+; |pill|total_pills:u2|hun[1]~1                                                            ; |pill|total_pills:u2|hun[1]~1                                                            ; out              ;
+; |pill|total_pills:u2|hun[2]~2                                                            ; |pill|total_pills:u2|hun[2]~2                                                            ; out              ;
+; |pill|total_pills:u2|hun[3]~3                                                            ; |pill|total_pills:u2|hun[3]~3                                                            ; out              ;
+; |pill|per_bottle:u4|LessThan0~0                                                          ; |pill|per_bottle:u4|LessThan0~0                                                          ; out0             ;
+; |pill|per_bottle:u4|LessThan0~1                                                          ; |pill|per_bottle:u4|LessThan0~1                                                          ; out0             ;
+; |pill|per_bottle:u4|LessThan0~2                                                          ; |pill|per_bottle:u4|LessThan0~2                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan0~0                                                          ; |pill|per_bottle:u3|LessThan0~0                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan0~1                                                          ; |pill|per_bottle:u3|LessThan0~1                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan0~2                                                          ; |pill|per_bottle:u3|LessThan0~2                                                          ; out0             ;
+; |pill|per_bottle:u4|Equal2~0                                                             ; |pill|per_bottle:u4|Equal2~0                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal0~0                                                             ; |pill|per_bottle:u3|Equal0~0                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~2                                                             ; |pill|per_bottle:u3|Equal1~2                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~3                                                             ; |pill|per_bottle:u3|Equal1~3                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~5                                                             ; |pill|per_bottle:u3|Equal1~5                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~6                                                             ; |pill|per_bottle:u3|Equal1~6                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~7                                                             ; |pill|per_bottle:u3|Equal1~7                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal2~0                                                             ; |pill|per_bottle:u3|Equal2~0                                                             ; out0             ;
+; |pill|total_pills:u2|Equal0~0                                                            ; |pill|total_pills:u2|Equal0~0                                                            ; out0             ;
+; |pill|total_pills:u2|Equal1~0                                                            ; |pill|total_pills:u2|Equal1~0                                                            ; out0             ;
+; |pill|control:u1|Equal1~0                                                                ; |pill|control:u1|Equal1~0                                                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~0                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~0                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~2                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~2                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~3                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~3                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~4                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~4                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|result_node~0                                ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|result_node~0                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~5                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~5                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~6                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~6                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~7                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~7                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~8                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~8                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|result_node~1                                ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|result_node~1                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|result_node                                  ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|result_node                                  ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~0                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~0                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~1                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~1                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~2                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~2                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~3                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~3                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~4                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~4                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|result_node~0                                ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|result_node~0                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~5                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~5                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~6                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~6                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~7                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~7                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~8                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~8                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|result_node~1                                ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|result_node~1                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|result_node                                  ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|result_node                                  ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~0                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~0                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~1                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~1                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~2                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~2                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~3                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~3                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~4                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~4                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|result_node~0                                ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|result_node~0                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~7                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~7                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~8                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~8                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~0                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~0                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~2                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~2                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~3                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~3                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~4                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~4                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node~0                                ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node~0                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~5                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~5                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~6                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~6                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~7                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~7                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~8                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~8                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node~1                                ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node~1                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node                                  ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node                                  ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[3]       ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[3]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[2]       ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[2]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[1]       ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[0]       ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[0]~0             ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[0]              ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[0]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[1]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[2]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[3]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[3]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[0]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[1]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[2]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|g3~0                ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|g3~0                ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~2                 ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~2                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~3                 ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~3                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]       ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]       ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]       ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]       ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0             ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]              ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[3]~3             ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[3]~3             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                 ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                 ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]       ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]       ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]       ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]       ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]              ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[0]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[1]~1             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[1]~1             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[1]              ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[1]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[2]~2             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[2]~2             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[2]              ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[2]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[3]~3             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[3]~3             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[3]              ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[3]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3                  ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3                  ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[0]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]~0             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]~0             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]~1             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]~1             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[1]     ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[1]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[2]     ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[2]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~1                 ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~1                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                 ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                 ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1 ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]   ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[3]   ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[3]   ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]        ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]        ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]        ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]        ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]               ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[1]~1              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[1]~1              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[2]~2              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[2]~2              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[2]               ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[2]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[3]~3              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[3]~3              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[3]               ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[3]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                 ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                 ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3                   ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3                   ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]~0              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]~0              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]~1              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]~1              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                  ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                  ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]        ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]        ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]        ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]        ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]               ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[0]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[0]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[1]~1              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[1]~1              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[1]               ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[1]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[2]~2              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[2]~2              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[2]               ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[2]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[3]~3              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[3]~3              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[3]               ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[3]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                 ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                 ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3                   ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3                   ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[0]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[0]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]~0              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]~0              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]~1              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]~1              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[0]      ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[0]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~1                  ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~1                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_result[0]~0    ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_result[0]~0    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                  ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0  ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]    ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                  ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]        ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]        ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]        ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]        ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0              ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]               ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]               ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                 ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                 ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                  ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                  ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]        ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]        ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]        ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]        ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0              ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]               ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]               ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[3]~3              ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[3]~3              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                 ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                 ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                  ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                  ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                  ; out0             ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                               ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                ; Output Port Name                                                                         ; Output Port Type ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+; |pill|comb~0                                                                             ; |pill|comb~0                                                                             ; out0             ;
+; |pill|mode[0]                                                                            ; |pill|mode[0]                                                                            ; out              ;
+; |pill|mode[1]                                                                            ; |pill|mode[1]                                                                            ; out              ;
+; |pill|max[2]                                                                             ; |pill|max[2]                                                                             ; out              ;
+; |pill|max[3]                                                                             ; |pill|max[3]                                                                             ; out              ;
+; |pill|max[5]                                                                             ; |pill|max[5]                                                                             ; out              ;
+; |pill|max[6]                                                                             ; |pill|max[6]                                                                             ; out              ;
+; |pill|max[7]                                                                             ; |pill|max[7]                                                                             ; out              ;
+; |pill|start                                                                              ; |pill|start                                                                              ; out              ;
+; |pill|per_bottle:u4|max_value[1]                                                         ; |pill|per_bottle:u4|max_value[1]                                                         ; out              ;
+; |pill|per_bottle:u4|led[7]~2                                                             ; |pill|per_bottle:u4|led[7]~2                                                             ; out              ;
+; |pill|per_bottle:u4|pills_h~4                                                            ; |pill|per_bottle:u4|pills_h~4                                                            ; out              ;
+; |pill|per_bottle:u4|pills_h~8                                                            ; |pill|per_bottle:u4|pills_h~8                                                            ; out              ;
+; |pill|per_bottle:u4|pills_h[3]                                                           ; |pill|per_bottle:u4|pills_h[3]                                                           ; regout           ;
+; |pill|per_bottle:u4|process_3~0                                                          ; |pill|per_bottle:u4|process_3~0                                                          ; out0             ;
+; |pill|per_bottle:u4|illegal                                                              ; |pill|per_bottle:u4|illegal                                                              ; out0             ;
+; |pill|per_bottle:u4|led~10                                                               ; |pill|per_bottle:u4|led~10                                                               ; out              ;
+; |pill|per_bottle:u4|max_value[3]                                                         ; |pill|per_bottle:u4|max_value[3]                                                         ; out              ;
+; |pill|per_bottle:u4|max_value[5]                                                         ; |pill|per_bottle:u4|max_value[5]                                                         ; out              ;
+; |pill|per_bottle:u4|max_value[6]                                                         ; |pill|per_bottle:u4|max_value[6]                                                         ; out              ;
+; |pill|per_bottle:u4|max_value[7]                                                         ; |pill|per_bottle:u4|max_value[7]                                                         ; out              ;
+; |pill|per_bottle:u4|pills_h[3]~3                                                         ; |pill|per_bottle:u4|pills_h[3]~3                                                         ; out              ;
+; |pill|per_bottle:u4|max_value[2]                                                         ; |pill|per_bottle:u4|max_value[2]                                                         ; out              ;
+; |pill|per_bottle:u3|led[7]~2                                                             ; |pill|per_bottle:u3|led[7]~2                                                             ; out              ;
+; |pill|per_bottle:u3|led[6]~5                                                             ; |pill|per_bottle:u3|led[6]~5                                                             ; out              ;
+; |pill|per_bottle:u3|pills_h~4                                                            ; |pill|per_bottle:u3|pills_h~4                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~5                                                            ; |pill|per_bottle:u3|pills_h~5                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~6                                                            ; |pill|per_bottle:u3|pills_h~6                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~7                                                            ; |pill|per_bottle:u3|pills_h~7                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~8                                                            ; |pill|per_bottle:u3|pills_h~8                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~9                                                            ; |pill|per_bottle:u3|pills_h~9                                                            ; out              ;
+; |pill|per_bottle:u3|pills_h~10                                                           ; |pill|per_bottle:u3|pills_h~10                                                           ; out              ;
+; |pill|per_bottle:u3|pills_h~11                                                           ; |pill|per_bottle:u3|pills_h~11                                                           ; out              ;
+; |pill|per_bottle:u3|pills_l~4                                                            ; |pill|per_bottle:u3|pills_l~4                                                            ; out              ;
+; |pill|per_bottle:u3|pills_l~5                                                            ; |pill|per_bottle:u3|pills_l~5                                                            ; out              ;
+; |pill|per_bottle:u3|pills_l~6                                                            ; |pill|per_bottle:u3|pills_l~6                                                            ; out              ;
+; |pill|per_bottle:u3|pills_l~8                                                            ; |pill|per_bottle:u3|pills_l~8                                                            ; out              ;
+; |pill|per_bottle:u3|pills_l~9                                                            ; |pill|per_bottle:u3|pills_l~9                                                            ; out              ;
+; |pill|per_bottle:u3|pills_l~10                                                           ; |pill|per_bottle:u3|pills_l~10                                                           ; out              ;
+; |pill|per_bottle:u3|pills_h[3]                                                           ; |pill|per_bottle:u3|pills_h[3]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_h[2]                                                           ; |pill|per_bottle:u3|pills_h[2]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_h[1]                                                           ; |pill|per_bottle:u3|pills_h[1]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_h[0]                                                           ; |pill|per_bottle:u3|pills_h[0]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_l[3]                                                           ; |pill|per_bottle:u3|pills_l[3]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_l[2]                                                           ; |pill|per_bottle:u3|pills_l[2]                                                           ; regout           ;
+; |pill|per_bottle:u3|pills_l[1]                                                           ; |pill|per_bottle:u3|pills_l[1]                                                           ; regout           ;
+; |pill|per_bottle:u3|led[5]~7                                                             ; |pill|per_bottle:u3|led[5]~7                                                             ; out              ;
+; |pill|per_bottle:u3|process_3~0                                                          ; |pill|per_bottle:u3|process_3~0                                                          ; out0             ;
+; |pill|per_bottle:u3|illegal                                                              ; |pill|per_bottle:u3|illegal                                                              ; out0             ;
+; |pill|per_bottle:u3|led~10                                                               ; |pill|per_bottle:u3|led~10                                                               ; out              ;
+; |pill|per_bottle:u3|led~11                                                               ; |pill|per_bottle:u3|led~11                                                               ; out              ;
+; |pill|per_bottle:u3|led~12                                                               ; |pill|per_bottle:u3|led~12                                                               ; out              ;
+; |pill|per_bottle:u3|led~14                                                               ; |pill|per_bottle:u3|led~14                                                               ; out              ;
+; |pill|per_bottle:u3|led~15                                                               ; |pill|per_bottle:u3|led~15                                                               ; out              ;
+; |pill|per_bottle:u3|max_value[3]                                                         ; |pill|per_bottle:u3|max_value[3]                                                         ; out              ;
+; |pill|per_bottle:u3|max_value[5]                                                         ; |pill|per_bottle:u3|max_value[5]                                                         ; out              ;
+; |pill|per_bottle:u3|max_value[6]                                                         ; |pill|per_bottle:u3|max_value[6]                                                         ; out              ;
+; |pill|per_bottle:u3|max_value[7]                                                         ; |pill|per_bottle:u3|max_value[7]                                                         ; out              ;
+; |pill|per_bottle:u3|pills_l[1]~1                                                         ; |pill|per_bottle:u3|pills_l[1]~1                                                         ; out              ;
+; |pill|per_bottle:u3|pills_l[2]~2                                                         ; |pill|per_bottle:u3|pills_l[2]~2                                                         ; out              ;
+; |pill|per_bottle:u3|pills_l[3]~3                                                         ; |pill|per_bottle:u3|pills_l[3]~3                                                         ; out              ;
+; |pill|per_bottle:u3|pills_h[0]~0                                                         ; |pill|per_bottle:u3|pills_h[0]~0                                                         ; out              ;
+; |pill|per_bottle:u3|pills_h[1]~1                                                         ; |pill|per_bottle:u3|pills_h[1]~1                                                         ; out              ;
+; |pill|per_bottle:u3|pills_h[2]~2                                                         ; |pill|per_bottle:u3|pills_h[2]~2                                                         ; out              ;
+; |pill|per_bottle:u3|pills_h[3]~3                                                         ; |pill|per_bottle:u3|pills_h[3]~3                                                         ; out              ;
+; |pill|per_bottle:u3|max_value[2]                                                         ; |pill|per_bottle:u3|max_value[2]                                                         ; out              ;
+; |pill|total_pills:u2|process_0~0                                                         ; |pill|total_pills:u2|process_0~0                                                         ; out0             ;
+; |pill|total_pills:u2|process_0~1                                                         ; |pill|total_pills:u2|process_0~1                                                         ; out0             ;
+; |pill|total_pills:u2|hun[0]~0                                                            ; |pill|total_pills:u2|hun[0]~0                                                            ; out              ;
+; |pill|total_pills:u2|ten~4                                                               ; |pill|total_pills:u2|ten~4                                                               ; out              ;
+; |pill|total_pills:u2|hun~4                                                               ; |pill|total_pills:u2|hun~4                                                               ; out              ;
+; |pill|total_pills:u2|hun~5                                                               ; |pill|total_pills:u2|hun~5                                                               ; out              ;
+; |pill|total_pills:u2|hun~6                                                               ; |pill|total_pills:u2|hun~6                                                               ; out              ;
+; |pill|total_pills:u2|hun~7                                                               ; |pill|total_pills:u2|hun~7                                                               ; out              ;
+; |pill|total_pills:u2|hun[0]                                                              ; |pill|total_pills:u2|hun[0]                                                              ; regout           ;
+; |pill|total_pills:u2|hun~8                                                               ; |pill|total_pills:u2|hun~8                                                               ; out              ;
+; |pill|total_pills:u2|hun~9                                                               ; |pill|total_pills:u2|hun~9                                                               ; out              ;
+; |pill|total_pills:u2|hun~10                                                              ; |pill|total_pills:u2|hun~10                                                              ; out              ;
+; |pill|total_pills:u2|hun~11                                                              ; |pill|total_pills:u2|hun~11                                                              ; out              ;
+; |pill|total_pills:u2|ten~12                                                              ; |pill|total_pills:u2|ten~12                                                              ; out              ;
+; |pill|total_pills:u2|hun~12                                                              ; |pill|total_pills:u2|hun~12                                                              ; out              ;
+; |pill|total_pills:u2|hun~13                                                              ; |pill|total_pills:u2|hun~13                                                              ; out              ;
+; |pill|total_pills:u2|hun~14                                                              ; |pill|total_pills:u2|hun~14                                                              ; out              ;
+; |pill|total_pills:u2|hun~15                                                              ; |pill|total_pills:u2|hun~15                                                              ; out              ;
+; |pill|total_pills:u2|ten[3]                                                              ; |pill|total_pills:u2|ten[3]                                                              ; regout           ;
+; |pill|total_pills:u2|hun[3]                                                              ; |pill|total_pills:u2|hun[3]                                                              ; regout           ;
+; |pill|total_pills:u2|hun[2]                                                              ; |pill|total_pills:u2|hun[2]                                                              ; regout           ;
+; |pill|total_pills:u2|hun[1]                                                              ; |pill|total_pills:u2|hun[1]                                                              ; regout           ;
+; |pill|total_pills:u2|hun[1]~1                                                            ; |pill|total_pills:u2|hun[1]~1                                                            ; out              ;
+; |pill|total_pills:u2|hun[2]~2                                                            ; |pill|total_pills:u2|hun[2]~2                                                            ; out              ;
+; |pill|total_pills:u2|hun[3]~3                                                            ; |pill|total_pills:u2|hun[3]~3                                                            ; out              ;
+; |pill|total_pills:u2|ten[3]~3                                                            ; |pill|total_pills:u2|ten[3]~3                                                            ; out              ;
+; |pill|control:u1|process_1~2                                                             ; |pill|control:u1|process_1~2                                                             ; out0             ;
+; |pill|per_bottle:u4|LessThan0~0                                                          ; |pill|per_bottle:u4|LessThan0~0                                                          ; out0             ;
+; |pill|per_bottle:u4|LessThan0~1                                                          ; |pill|per_bottle:u4|LessThan0~1                                                          ; out0             ;
+; |pill|per_bottle:u4|LessThan0~2                                                          ; |pill|per_bottle:u4|LessThan0~2                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan0~0                                                          ; |pill|per_bottle:u3|LessThan0~0                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan0~1                                                          ; |pill|per_bottle:u3|LessThan0~1                                                          ; out0             ;
+; |pill|per_bottle:u3|LessThan0~2                                                          ; |pill|per_bottle:u3|LessThan0~2                                                          ; out0             ;
+; |pill|per_bottle:u4|Equal1~7                                                             ; |pill|per_bottle:u4|Equal1~7                                                             ; out0             ;
+; |pill|per_bottle:u4|Equal2~0                                                             ; |pill|per_bottle:u4|Equal2~0                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal0~0                                                             ; |pill|per_bottle:u3|Equal0~0                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~2                                                             ; |pill|per_bottle:u3|Equal1~2                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~3                                                             ; |pill|per_bottle:u3|Equal1~3                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~5                                                             ; |pill|per_bottle:u3|Equal1~5                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~6                                                             ; |pill|per_bottle:u3|Equal1~6                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal1~7                                                             ; |pill|per_bottle:u3|Equal1~7                                                             ; out0             ;
+; |pill|per_bottle:u3|Equal2~0                                                             ; |pill|per_bottle:u3|Equal2~0                                                             ; out0             ;
+; |pill|total_pills:u2|Equal0~0                                                            ; |pill|total_pills:u2|Equal0~0                                                            ; out0             ;
+; |pill|total_pills:u2|Equal4~0                                                            ; |pill|total_pills:u2|Equal4~0                                                            ; out0             ;
+; |pill|control:u1|Equal0~0                                                                ; |pill|control:u1|Equal0~0                                                                ; out0             ;
+; |pill|control:u1|Equal1~0                                                                ; |pill|control:u1|Equal1~0                                                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~0                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~0                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~1                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~1                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~2                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~2                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|result_node~0                                ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|result_node~0                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~5                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~5                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~6                                          ; |pill|control:u1|lpm_mux:Mux4|muxlut:$00009|_~6                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~0                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~0                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~1                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~1                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~2                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~2                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~4                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~4                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|result_node~0                                ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|result_node~0                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~5                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~5                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~6                                          ; |pill|control:u1|lpm_mux:Mux3|muxlut:$00009|_~6                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~0                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~0                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~1                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~1                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~2                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~2                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~4                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~4                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|result_node~0                                ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|result_node~0                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~8                                          ; |pill|control:u1|lpm_mux:Mux2|muxlut:$00009|_~8                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~0                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~0                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~1                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~1                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~2                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~2                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~4                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~4                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node~0                                ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node~0                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~5                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~5                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~6                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~6                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~8                                          ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|_~8                                          ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node~1                                ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node~1                                ; out0             ;
+; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node                                  ; |pill|control:u1|lpm_mux:Mux0|muxlut:$00009|result_node                                  ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[3]       ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[3]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[2]       ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[2]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[1]       ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[0]       ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[0]~0             ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[0]              ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|psi[0]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[1]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[2]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[3]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|gn[3]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[0]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[1]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[2]               ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|pc[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|g3~0                ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|g3~0                ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~2                 ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~2                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~3                 ; |pill|total_pills:u2|lpm_add_sub:Add2|addcore:adder|addcore:adder[0]|_~3                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]       ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]       ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]       ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]       ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0             ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]              ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[3]              ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[3]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]               ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3                  ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3                  ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                 ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                 ; |pill|total_pills:u2|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]       ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]       ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]       ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]       ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]       ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]              ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[0]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[1]~1             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[1]~1             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[1]              ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[1]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[2]~2             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[2]~2             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[2]              ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[2]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[3]~3             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[3]~3             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[3]              ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[3]              ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3                  ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3                  ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[0]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[0]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]~0             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]~0             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]~1             ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]~1             ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]               ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]               ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[0]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[1]     ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[1]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[2]     ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[2]     ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~1                 ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~1                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_result[0]~0   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                 ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                 ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1 ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1 ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]   ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]   ; out0             ;
+; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[3]   ; |pill|total_pills:u2|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[3]   ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]        ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]        ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]        ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]        ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]               ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[1]               ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[1]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[2]~2              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[2]~2              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[2]               ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[2]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[3]~3              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[3]~3              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[3]               ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[3]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                 ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                 ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3                   ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3                   ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]~0              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]~0              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]~1              ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]~1              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gc[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                  ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0  ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]    ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[1]    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                  ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; |pill|per_bottle:u3|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]        ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]        ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]        ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]        ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]        ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]               ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[0]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[0]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[1]~1              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[1]~1              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[1]               ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[1]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[2]~2              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[2]~2              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[2]               ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[2]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[3]~3              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[3]~3              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[3]               ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[3]               ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                 ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                 ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3                   ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3                   ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[0]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[0]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]~0              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]~0              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[1]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]~1              ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]~1              ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]                ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gc[2]                ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[0]      ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[0]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[1]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|tot_cin_node[2]      ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~1                  ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~1                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_result[0]~0    ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_result[0]~0    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                  ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0  ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]~0  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]    ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[1]    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                  ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]~1  ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[2]    ; out0             ;
+; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; |pill|per_bottle:u3|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|unreg_res_node[3]    ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]        ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[3]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]        ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[2]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]        ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[1]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]        ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|datab_node[0]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0              ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|ps[0]~0              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]               ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|psi[0]               ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[1]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[2]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|gn[3]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[0]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[1]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]                ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|pc[2]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                 ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|g3~0                 ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                  ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~2                  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                  ; |pill|per_bottle:u4|lpm_add_sub:Add1|addcore:adder|addcore:adder[0]|_~3                  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[7]~0      ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]        ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[3]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]        ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[2]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]        ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[1]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]        ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|datab_node[0]        ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0              ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|ps[0]~0              ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]               ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[0]               ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[1]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[2]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[3]               ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|psi[3]               ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|gn[3]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[0]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[1]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]                ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|pc[2]                ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                 ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3~0                 ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3                   ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|g3                   ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                  ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~2                  ; out0             ;
+; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                  ; |pill|per_bottle:u4|lpm_add_sub:Add0|addcore:adder|addcore:adder[0]|_~3                  ; out0             ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Apr 15 22:49:58 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off pill -c pill
+Info: Using vector source file "D:/Users/SteveZL/Desktop/大二下/数字逻辑课程设计/pill-4.7/pill.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      43.30 %
+Info: Number of transitions in simulation is 6676
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 160 megabytes
+    Info: Processing ended: Sat Apr 15 22:49:58 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
